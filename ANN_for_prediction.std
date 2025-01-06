@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="latin1"?>
+<studyTableDocument>
+	<data>
+		<models>
+			<model>
+				<BasicInformation type="descriptor" GUID="{801CB9F3-5E60-4F92-987B-2DF607B812B4}">
+					<Name>Fast Descriptors</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2002-09-25T17:19:52</DateCreated>
+					<DateModified>2002-09-25T17:19:52</DateModified>
+					<Note>Fast Descriptor Models</Note>
+				</BasicInformation>
+				<Inputs number="1">
+					<Input name="Structure" type="structure" role="Variable" permittedRoles="Variable">
+						<Key>
+							<KeyName>Structure</KeyName>
+						</Key>
+						<GUID></GUID>
+					</Input>
+				</Inputs>
+				<Outputs number="37">
+					<Output name="Rotatable bonds" type="count">
+						<Key>
+							<KeyName>Rotlbonds</KeyName>
+						</Key>
+					</Output>
+					<Output name="Hydrogen bond donor" type="count">
+						<Key>
+							<KeyName>Hbond donor</KeyName>
+						</Key>
+					</Output>
+					<Output name="Hydrogen bond acceptor" type="count">
+						<Key>
+							<KeyName>Hbond acceptor</KeyName>
+						</Key>
+					</Output>
+					<Output name="Chiral centers" type="count">
+						<Key>
+							<KeyName>Chiral centers</KeyName>
+						</Key>
+					</Output>
+					<Output name="AlogP" type="double">
+						<Key>
+							<KeyName>AlogP</KeyName>
+						</Key>
+					</Output>
+					<Output name="AlogP98" type="double">
+						<Key>
+							<KeyName>AlogP98</KeyName>
+						</Key>
+					</Output>
+					<Output name="Molecular refractivity" type="double">
+						<Key>
+							<KeyName>MolRef</KeyName>
+						</Key>
+					</Output>
+					<Output name="Molecular flexibility" type="double">
+						<Key>
+							<KeyName>PHI</KeyName>
+						</Key>
+					</Output>
+					<Output name="Balaban index JX" type="double">
+						<Key>
+							<KeyName>JX</KeyName>
+						</Key>
+					</Output>
+					<Output name="Balaban index JY" type="double">
+						<Key>
+							<KeyName>JY</KeyName>
+						</Key>
+					</Output>
+					<Output name="Wiener index" type="long">
+						<Key>
+							<KeyName>Wiener</KeyName>
+						</Key>
+					</Output>
+					<Output name="Zagreb index" type="long">
+						<Key>
+							<KeyName>Zagreb</KeyName>
+						</Key>
+					</Output>
+					<OutputArray name="Kappa indices" type="double">
+						<Key>
+							<KeyName>KAPPA</KeyName>
+						</Key>
+						<OutputItems number="3">
+							<OutputItem>Kappa-1</OutputItem>
+							<OutputItem>Kappa-2</OutputItem>
+							<OutputItem>Kappa-3</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Kappa indices (alpha modified)" type="double">
+						<Key>
+							<KeyName>KAPPA-AM</KeyName>
+						</Key>
+						<OutputItems number="3">
+							<OutputItem>Kappa-1 (alpha modified)</OutputItem>
+							<OutputItem>Kappa-2 (alpha modified)</OutputItem>
+							<OutputItem>Kappa-3 (alpha modified)</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Subgraph counts (0-3)" type="count" unit="unknown">
+						<Key>
+							<KeyName>SC03</KeyName>
+						</Key>
+						<OutputItems number="6">
+							<OutputItem>Subgraph counts (0): path</OutputItem>
+							<OutputItem>Subgraph counts (1): path</OutputItem>
+							<OutputItem>Subgraph counts (2): path</OutputItem>
+							<OutputItem>Subgraph counts (3): path</OutputItem>
+							<OutputItem>Subgraph counts (3): cluster</OutputItem>
+							<OutputItem>Subgraph counts (3): chain</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Subgraph counts (4-6)" type="count" unit="unknown">
+						<Key>
+							<KeyName>SC46</KeyName>
+						</Key>
+						<OutputItems number="12">
+							<OutputItem>Subgraph counts (4): path</OutputItem>
+							<OutputItem>Subgraph counts (4): cluster</OutputItem>
+							<OutputItem>Subgraph counts (4): path/cluster</OutputItem>
+							<OutputItem>Subgraph counts (4): chain</OutputItem>
+							<OutputItem>Subgraph counts (5): path</OutputItem>
+							<OutputItem>Subgraph counts (5): cluster</OutputItem>
+							<OutputItem>Subgraph counts (5): path/cluster</OutputItem>
+							<OutputItem>Subgraph counts (5): chain</OutputItem>
+							<OutputItem>Subgraph counts (6): path</OutputItem>
+							<OutputItem>Subgraph counts (6): cluster</OutputItem>
+							<OutputItem>Subgraph counts (6): path/cluster</OutputItem>
+							<OutputItem>Subgraph counts (6): chain</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Chi indices (0-3)" type="double">
+						<Key>
+							<KeyName>CHI03</KeyName>
+						</Key>
+						<OutputItems number="6">
+							<OutputItem>Chi (0)</OutputItem>
+							<OutputItem>Chi (1)</OutputItem>
+							<OutputItem>Chi (2)</OutputItem>
+							<OutputItem>Chi (3): path</OutputItem>
+							<OutputItem>Chi (3): cluster</OutputItem>
+							<OutputItem>Chi (3): chain</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Chi indices (4-6)" type="double">
+						<Key>
+							<KeyName>CHI46</KeyName>
+						</Key>
+						<OutputItems number="12">
+							<OutputItem>Chi (4): path</OutputItem>
+							<OutputItem>Chi (4): cluster</OutputItem>
+							<OutputItem>Chi (4): path/cluster</OutputItem>
+							<OutputItem>Chi (4): chain</OutputItem>
+							<OutputItem>Chi (5): path</OutputItem>
+							<OutputItem>Chi (5): cluster</OutputItem>
+							<OutputItem>Chi (5): path/cluster</OutputItem>
+							<OutputItem>Chi (5): chain</OutputItem>
+							<OutputItem>Chi (6): path</OutputItem>
+							<OutputItem>Chi (6): cluster</OutputItem>
+							<OutputItem>Chi (6): path/cluster</OutputItem>
+							<OutputItem>Chi (6): chain</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Chi indices (0-3) (valence modified)" type="double">
+						<Key>
+							<KeyName>CHIV03</KeyName>
+						</Key>
+						<OutputItems number="6">
+							<OutputItem>Chi (0) (valence modified)</OutputItem>
+							<OutputItem>Chi (1) (valence modified)</OutputItem>
+							<OutputItem>Chi (2) (valence modified)</OutputItem>
+							<OutputItem>Chi (3): path (valence modified)</OutputItem>
+							<OutputItem>Chi (3): cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (3): chain (valence modified)</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Chi indices (4-6) (valence modified)" type="double">
+						<Key>
+							<KeyName>CHIV46</KeyName>
+						</Key>
+						<OutputItems number="12">
+							<OutputItem>Chi (4): path (valence modified)</OutputItem>
+							<OutputItem>Chi (4): cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (4): path/cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (4): chain (valence modified)</OutputItem>
+							<OutputItem>Chi (5): path (valence modified)</OutputItem>
+							<OutputItem>Chi (5): cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (5): path/cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (5): chain (valence modified)</OutputItem>
+							<OutputItem>Chi (6): path (valence modified)</OutputItem>
+							<OutputItem>Chi (6): cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (6): path/cluster (valence modified)</OutputItem>
+							<OutputItem>Chi (6): chain (valence modified)</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<Output name="Information content (IC)" type="double">
+						<Key>
+							<KeyName>IC</KeyName>
+						</Key>
+					</Output>
+					<Output name="Bond information content (BIC)" type="double">
+						<Key>
+							<KeyName>BIC</KeyName>
+						</Key>
+					</Output>
+					<Output name="Complementary information content (CIC)" type="double">
+						<Key>
+							<KeyName>CIC</KeyName>
+						</Key>
+					</Output>
+					<Output name="Structural information content (SIC)" type="double">
+						<Key>
+							<KeyName>SIC</KeyName>
+						</Key>
+					</Output>
+					<Output name="Edge adjacency/equality" type="double">
+						<Key>
+							<KeyName>E-ADJ-equ</KeyName>
+						</Key>
+					</Output>
+					<Output name="Edge adjacency/magnitude" type="double">
+						<Key>
+							<KeyName>E-ADJ-mag</KeyName>
+						</Key>
+					</Output>
+					<Output name="Edge distance/equality" type="double">
+						<Key>
+							<KeyName>E-DIST-equ</KeyName>
+						</Key>
+					</Output>
+					<Output name="Edge distance/magnitude" type="double">
+						<Key>
+							<KeyName>E-DIST-mag</KeyName>
+						</Key>
+					</Output>
+					<Output name="Vertex adjacency/equality" type="double">
+						<Key>
+							<KeyName>V-ADJ-equ</KeyName>
+						</Key>
+					</Output>
+					<Output name="Vertex adjacency/magnitude" type="double">
+						<Key>
+							<KeyName>V-ADJ-mag</KeyName>
+						</Key>
+					</Output>
+					<Output name="Vertex distance/equality" type="double">
+						<Key>
+							<KeyName>V-DIST-equ</KeyName>
+						</Key>
+					</Output>
+					<Output name="Vertex distance/magnitude" type="double">
+						<Key>
+							<KeyName>V-DIST-mag</KeyName>
+						</Key>
+					</Output>
+					<Output name="Atomic composition (total)" type="double">
+						<Key>
+							<KeyName>IAC-Total</KeyName>
+						</Key>
+					</Output>
+					<Output name="Atomic composition (mean)" type="double">
+						<Key>
+							<KeyName>IAC-Mean</KeyName>
+						</Key>
+					</Output>
+					<OutputArray name="E-state keys (sums)" type="double">
+						<Key>
+							<KeyName>ESUMS</KeyName>
+						</Key>
+						<OutputItems number="79">
+							<OutputItem>E-state keys (sums): S_sCH3</OutputItem>
+							<OutputItem>E-state keys (sums): S_dCH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssCH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_tCH</OutputItem>
+							<OutputItem>E-state keys (sums): S_dsCH</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaCH</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssCH</OutputItem>
+							<OutputItem>E-state keys (sums): S_ddC</OutputItem>
+							<OutputItem>E-state keys (sums): S_tsC </OutputItem>
+							<OutputItem>E-state keys (sums): S_dssC</OutputItem>
+							<OutputItem>E-state keys (sums): S_aasC</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaaC</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssC</OutputItem>
+							<OutputItem>E-state keys (sums): S_sNH3</OutputItem>
+							<OutputItem>E-state keys (sums): S_sNH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssNH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_dNH </OutputItem>
+							<OutputItem>E-state keys (sums): S_ssNH</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaNH</OutputItem>
+							<OutputItem>E-state keys (sums): S_tN</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssNH</OutputItem>
+							<OutputItem>E-state keys (sums): S_dsN</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaN</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssN</OutputItem>
+							<OutputItem>E-state keys (sums): S_ddsN</OutputItem>
+							<OutputItem>E-state keys (sums): S_aasN</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssN</OutputItem>
+							<OutputItem>E-state keys (sums): S_sOH</OutputItem>
+							<OutputItem>E-state keys (sums): S_dO</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssO</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaO</OutputItem>
+							<OutputItem>E-state keys (sums): S_sSH</OutputItem>
+							<OutputItem>E-state keys (sums): S_dS</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssS</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaS</OutputItem>
+							<OutputItem>E-state keys (sums): S_dssS</OutputItem>
+							<OutputItem>E-state keys (sums): S_ddssS</OutputItem>
+							<OutputItem>E-state keys (sums): S_sPH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssPH</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssP</OutputItem>
+							<OutputItem>E-state keys (sums): S_dsssP</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssssP</OutputItem>
+							<OutputItem>E-state keys (sums): S_sF</OutputItem>
+							<OutputItem>E-state keys (sums): S_sCl</OutputItem>
+							<OutputItem>E-state keys (sums): S_sBr</OutputItem>
+							<OutputItem>E-state keys (sums): S_sI</OutputItem>
+							<OutputItem>E-state keys (sums): S_sLi</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssBe</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssBe</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssBH</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssB</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssB</OutputItem>
+							<OutputItem>E-state keys (sums): S_sSiH3</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssSiH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssSiH</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssSi</OutputItem>
+							<OutputItem>E-state keys (sums): S_sGeH3</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssGeH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssGeH</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssGe</OutputItem>
+							<OutputItem>E-state keys (sums): S_sAsH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssAsH</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssAs</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssdAs</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssssAs</OutputItem>
+							<OutputItem>E-state keys (sums): S_sSeH</OutputItem>
+							<OutputItem>E-state keys (sums): S_dSe</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssSe</OutputItem>
+							<OutputItem>E-state keys (sums): S_aaSe</OutputItem>
+							<OutputItem>E-state keys (sums): S_dssSe</OutputItem>
+							<OutputItem>E-state keys (sums): S_ddssSe</OutputItem>
+							<OutputItem>E-state keys (sums): S_sSnH3</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssSnH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssSnH</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssSn</OutputItem>
+							<OutputItem>E-state keys (sums): S_sPbH3</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssPbH2</OutputItem>
+							<OutputItem>E-state keys (sums): S_sssPbH</OutputItem>
+							<OutputItem>E-state keys (sums): S_ssssPb</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="E-state keys (counts)" type="count">
+						<Key>
+							<KeyName>ECOUNT</KeyName>
+						</Key>
+						<OutputItems number="79">
+							<OutputItem>E-state keys (counts): N_sCH3 </OutputItem>
+							<OutputItem>E-state keys (counts): N_dCH2 </OutputItem>
+							<OutputItem>E-state keys (counts): N_ssCH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_tCH</OutputItem>
+							<OutputItem>E-state keys (counts): N_dsCH</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaCH</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssCH</OutputItem>
+							<OutputItem>E-state keys (counts): N_ddC</OutputItem>
+							<OutputItem>E-state keys (counts): N_tsC </OutputItem>
+							<OutputItem>E-state keys (counts): N_dssC</OutputItem>
+							<OutputItem>E-state keys (counts): N_aasC</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaaC</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssC</OutputItem>
+							<OutputItem>E-state keys (counts): N_sNH3</OutputItem>
+							<OutputItem>E-state keys (counts): N_sNH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssNH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_dNH </OutputItem>
+							<OutputItem>E-state keys (counts): N_ssNH</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaNH</OutputItem>
+							<OutputItem>E-state keys (counts): N_tN</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssNH</OutputItem>
+							<OutputItem>E-state keys (counts): N_dsN</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaN</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssN</OutputItem>
+							<OutputItem>E-state keys (counts): N_ddsN</OutputItem>
+							<OutputItem>E-state keys (counts): N_aasN</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssN</OutputItem>
+							<OutputItem>E-state keys (counts): N_sOH</OutputItem>
+							<OutputItem>E-state keys (counts): N_dO</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssO</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaO</OutputItem>
+							<OutputItem>E-state keys (counts): N_sSH</OutputItem>
+							<OutputItem>E-state keys (counts): N_dS</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssS</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaS</OutputItem>
+							<OutputItem>E-state keys (counts): N_dssS</OutputItem>
+							<OutputItem>E-state keys (counts): N_ddssS</OutputItem>
+							<OutputItem>E-state keys (counts): N_sPH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssPH</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssP</OutputItem>
+							<OutputItem>E-state keys (counts): N_dsssP</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssssP</OutputItem>
+							<OutputItem>E-state keys (counts): N_sF</OutputItem>
+							<OutputItem>E-state keys (counts): N_sCl</OutputItem>
+							<OutputItem>E-state keys (counts): N_sBr</OutputItem>
+							<OutputItem>E-state keys (counts): N_sI</OutputItem>
+							<OutputItem>E-state keys (counts): N_sLi</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssBe</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssBe</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssBH</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssB</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssB</OutputItem>
+							<OutputItem>E-state keys (counts): N_sSiH3</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssSiH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssSiH</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssSi</OutputItem>
+							<OutputItem>E-state keys (counts): N_sGeH3</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssGeH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssGeH</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssGe</OutputItem>
+							<OutputItem>E-state keys (counts): N_sAsH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssAsH</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssAs</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssdAs</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssssAs</OutputItem>
+							<OutputItem>E-state keys (counts): N_sSeH</OutputItem>
+							<OutputItem>E-state keys (counts): N_dSe</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssSe</OutputItem>
+							<OutputItem>E-state keys (counts): N_aaSe</OutputItem>
+							<OutputItem>E-state keys (counts): N_dssSe</OutputItem>
+							<OutputItem>E-state keys (counts): N_ddssSe</OutputItem>
+							<OutputItem>E-state keys (counts): N_sSnH3</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssSnH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssSnH</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssSn</OutputItem>
+							<OutputItem>E-state keys (counts): N_sPbH3</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssPbH2</OutputItem>
+							<OutputItem>E-state keys (counts): N_sssPbH</OutputItem>
+							<OutputItem>E-state keys (counts): N_ssssPb</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="E-state keys (indicators)" type="long">
+						<Key>
+							<KeyName>EIND</KeyName>
+						</Key>
+						<OutputItems number="79">
+							<OutputItem>E-state keys (indicators): I_sCH3 </OutputItem>
+							<OutputItem>E-state keys (indicators): I_dCH2 </OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssCH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_tCH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dsCH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaCH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssCH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ddC</OutputItem>
+							<OutputItem>E-state keys (indicators): I_tsC </OutputItem>
+							<OutputItem>E-state keys (indicators): I_dssC</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aasC</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaaC</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssC</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sNH3</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sNH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssNH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dNH </OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssNH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaNH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_tN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssNH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dsN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ddsN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aasN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssN</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sOH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dO</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssO</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaO</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sSH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dS</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssS</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaS</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dssS</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ddssS</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sPH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssPH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssP</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dsssP</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssssP</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sF</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sCl</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sBr</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sI</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sLi</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssBe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssBe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssBH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssB</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssB</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sSiH3</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssSiH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssSiH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssSi</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sGeH3</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssGeH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssGeH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssGe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sAsH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssAsH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssAs</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssdAs</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssssAs</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sSeH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dSe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssSe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_aaSe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_dssSe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ddssSe</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sSnH3</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssSnH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssSnH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssSn</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sPbH3</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssPbH2</OutputItem>
+							<OutputItem>E-state keys (indicators): I_sssPbH</OutputItem>
+							<OutputItem>E-state keys (indicators): I_ssssPb</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputGroups number="17">
+						<OutputGroup name="Rotatable bonds" category="Structural">
+							<OutputKey>Rotlbonds</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Hydrogen bond donor" category="Structural">
+							<OutputKey>Hbond donor</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Hydrogen bond acceptor" category="Structural">
+							<OutputKey>Hbond acceptor</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Chiral centers" category="Structural">
+							<OutputKey>Chiral centers</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="AlogP" category="Thermodynamic">
+							<OutputKey>AlogP</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="AlogP98" category="Thermodynamic">
+							<OutputKey>AlogP98</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Molecular refractivity" category="Thermodynamic">
+							<OutputKey>MolRef</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Molecular flexibility" category="Topological">
+							<OutputKey>PHI</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Balaban indices" category="Topological">
+							<OutputKey>JX</OutputKey>
+							<OutputKey>JY</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Wiener index" category="Topological">
+							<OutputKey>Wiener</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Zagreb index" category="Topological">
+							<OutputKey>Zagreb</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Kappa indices" category="Topological">
+							<OutputKey>KAPPA</OutputKey>
+							<OutputKey>KAPPA-AM</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Subgraph counts" category="Topological">
+							<OutputKey>SC03</OutputKey>
+							<OutputKey defaultCalc="0">SC46</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Chi indices" category="Topological">
+							<OutputKey>CHI03</OutputKey>
+							<OutputKey defaultCalc="0">CHI46</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Valence modified chi indices" category="Topological">
+							<OutputKey>CHIV03</OutputKey>
+							<OutputKey defaultCalc="0">CHIV46</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Information content" category="Information">
+							<OutputKey>IC</OutputKey>
+							<OutputKey>BIC</OutputKey>
+							<OutputKey>CIC</OutputKey>
+							<OutputKey>SIC</OutputKey>
+							<OutputKey defaultCalc="0">E-ADJ-equ</OutputKey>
+							<OutputKey>E-ADJ-mag</OutputKey>
+							<OutputKey defaultCalc="0">E-DIST-equ</OutputKey>
+							<OutputKey>E-DIST-mag</OutputKey>
+							<OutputKey>V-ADJ-equ</OutputKey>
+							<OutputKey>V-ADJ-mag</OutputKey>
+							<OutputKey>V-DIST-equ</OutputKey>
+							<OutputKey>V-DIST-mag</OutputKey>
+							<OutputKey>IAC-Total</OutputKey>
+							<OutputKey defaultCalc="0">IAC-Mean</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="E-state keys" category="E-state keys">
+							<OutputKey>ESUMS</OutputKey>
+							<OutputKey defaultCalc="0">ECOUNT</OutputKey>
+							<OutputKey defaultCalc="0">EIND</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBPhysicalModelEngines.ModelEngineFastDescriptor" engineName="Fast Descriptors"/>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="simulation" GUID="{9B673696-6E67-4148-8B9B-CE91B8B860EA}">
+					<Name>VAMP Electrostatics</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2002-09-25T17:06:27</DateCreated>
+					<DateModified>2002-02-15T23:55:39</DateModified>
+					<Note>A model to calculate electrostatic descriptors using VAMP</Note>
+				</BasicInformation>
+				<Inputs number="7">
+					<Input name="Task type" type="enumeration" role="Parameter" permittedRoles="Parameter">
+						<Key>
+							<KeyName>Task</KeyName>
+						</Key>
+						<Value>Energy</Value>
+						<Range type="enumeration" number="2">
+							<Item name="Energy" value="1"/>
+							<Item name="Geometry Optimization" value="2"/>
+						</Range>
+					</Input>
+					<Input name="Hamiltonian" type="enumeration" role="Parameter" permittedRoles="Parameter">
+						<Key>
+							<KeyName>Hamiltonian</KeyName>
+						</Key>
+						<Value>PM6</Value>
+						<Range type="enumeration" number="7">
+							<Item name="AM1" value="1"/>
+							<Item name="AM1*" value="2"/>
+							<Item name="MNDO" value="3"/>
+							<Item name="MNDO/C" value="4"/>
+							<Item name="MNDO/d" value="5"/>
+							<Item name="PM3" value="6"/>
+							<Item name="PM6" value="7"/>
+						</Range>
+					</Input>
+					<Input name="Formalism" type="enumeration" role="Parameter" permittedRoles="Parameter">
+						<Key>
+							<KeyName>Formalism</KeyName>
+						</Key>
+						<Value>RHF</Value>
+						<Range type="enumeration" number="3">
+							<Item name="UHF" value="1"/>
+							<Item name="RHF" value="2"/>
+							<Item name="A-UHF" value="3"/>
+						</Range>
+					</Input>
+					<Input name="Charge" type="long" role="Parameter" permittedRoles="Parameter">
+						<Key>
+							<KeyName>Charge</KeyName>
+						</Key>
+						<Value>0</Value>
+						<Range type="enumeration" number="2">
+							<Item name="Min" value="-1000"/>
+							<Item name="Max" value="1000"/>
+						</Range>
+					</Input>
+					<Input name="Solvent" type="enumeration" role="Parameter" permittedRoles="Parameter">
+						<Key>
+							<KeyName>Solvent</KeyName>
+						</Key>
+						<Value>None</Value>
+						<Range type="enumeration" number="16">
+							<Item name="None" value="1"/>
+							<Item name="Acetone" value="2"/>
+							<Item name="Acetonitrile" value="3"/>
+							<Item name="Benzene" value="4"/>
+							<Item name="Carbon tetrachloride" value="5"/>
+							<Item name="Chloroform" value="6"/>
+							<Item name="Diethyl ether" value="7"/>
+							<Item name="Dimethyl sulfoxide" value="8"/>
+							<Item name="Ethanol" value="9"/>
+							<Item name="Methanol" value="10"/>
+							<Item name="Methylene chloride" value="11"/>
+							<Item name="n-Hexane" value="12"/>
+							<Item name="n-Hexadecane" value="13"/>
+							<Item name="Nitrobenzene" value="14"/>
+							<Item name="Pyridine" value="15"/>
+							<Item name="Water" value="16"/>
+						</Range>
+					</Input>
+					<Input name="Use internal coordinates" type="boolean" role="Parameter" permittedRoles="Parameter">
+						<Key>
+							<KeyName>UseInternalCoordinates</KeyName>
+						</Key>
+						<Value>0</Value>
+					</Input>
+					<Input name="Structure" type="structure" role="Variable" permittedRoles="Variable">
+						<Key>
+							<KeyName>Structure</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="16">
+					<Output name="Structure" type="structure">
+						<Key>
+							<KeyName>Optimized Structure</KeyName>
+						</Key>
+					</Output>
+					<Output name="Total energy" type="energy">
+						<Key>
+							<KeyName>TOTAL ENERGY</KeyName>
+						</Key>
+					</Output>
+					<Output name="Heat of formation" type="energy">
+						<Key>
+							<KeyName>HEAT OF FORMATION</KeyName>
+						</Key>
+					</Output>
+					<Output name="Electronic energy" type="energy">
+						<Key>
+							<KeyName>ELECTRONIC ENERGY</KeyName>
+						</Key>
+					</Output>
+					<Output name="HOMO eigenvalue" type="energy">
+						<Key>
+							<KeyName>HOMO</KeyName>
+						</Key>
+					</Output>
+					<Output name="LUMO eigenvalue" type="energy">
+						<Key>
+							<KeyName>LUMO</KeyName>
+						</Key>
+					</Output>
+					<Output name="Molecular surface area" type="area">
+						<Key>
+							<KeyName>MOLAREA</KeyName>
+						</Key>
+					</Output>
+					<Output name="Molecular point group" type="string">
+						<Key>
+							<KeyName>POINT-GROUP</KeyName>
+						</Key>
+					</Output>
+					<Output name="Mean polarizability" type="double">
+						<Key>
+							<KeyName>MEANPOL</KeyName>
+						</Key>
+					</Output>
+					<Output name="Total dipole" type="double">
+						<Key>
+							<KeyName>TOTAL DIPOL</KeyName>
+						</Key>
+					</Output>
+					<OutputArray name="Dipole components" type="double">
+						<Key>
+							<KeyName>DIPOL</KeyName>
+						</Key>
+						<OutputItems number="3">
+							<OutputItem>Dipole x</OutputItem>
+							<OutputItem>Dipole y</OutputItem>
+							<OutputItem>Dipole z</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Quadrupole components" type="double">
+						<Key>
+							<KeyName>QUADPOL</KeyName>
+						</Key>
+						<OutputItems number="6">
+							<OutputItem>Quadrupole xx</OutputItem>
+							<OutputItem>Quadrupole xy</OutputItem>
+							<OutputItem>Quadrupole yy</OutputItem>
+							<OutputItem>Quadrupole xz</OutputItem>
+							<OutputItem>Quadrupole yz</OutputItem>
+							<OutputItem>Quadrupole zz</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<OutputArray name="Octupole components" type="double">
+						<Key>
+							<KeyName>OCTUPOL</KeyName>
+						</Key>
+						<OutputItems number="10">
+							<OutputItem>Octupole xxx</OutputItem>
+							<OutputItem>Octupole xxy</OutputItem>
+							<OutputItem>Octupole xxz</OutputItem>
+							<OutputItem>Octupole xyy</OutputItem>
+							<OutputItem>Octupole xyz</OutputItem>
+							<OutputItem>Octupole xzz</OutputItem>
+							<OutputItem>Octupole yyy</OutputItem>
+							<OutputItem>Octupole yyz</OutputItem>
+							<OutputItem>Octupole yzz</OutputItem>
+							<OutputItem>Octupole zzz</OutputItem>
+						</OutputItems>
+					</OutputArray>
+					<Output name="ESP charge" type="double" isArrayType="-1">
+						<Key>
+							<KeyName>VESPA</KeyName>
+						</Key>
+					</Output>
+					<Output name="Coulson charge" type="double" isArrayType="-1">
+						<Key>
+							<KeyName>COULSON CHARGES</KeyName>
+						</Key>
+					</Output>
+					<Output name="Mulliken charge" type="double" isArrayType="-1">
+						<Key>
+							<KeyName>MULLIKEN CHARGES</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="10">
+						<OutputGroup name="Structure" category="Structure">
+							<OutputKey>Optimized Structure</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Energy" category="Energies">
+							<OutputKey defaultCalc="0">TOTAL ENERGY</OutputKey>
+							<OutputKey defaultCalc="0">ELECTRONIC ENERGY</OutputKey>
+							<OutputKey>HEAT OF FORMATION</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Orbitals" category="Energies">
+							<OutputKey>HOMO</OutputKey>
+							<OutputKey>LUMO</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Molecular surface area" category="Structural">
+							<OutputKey>MOLAREA</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Molecular point group" category="Structural">
+							<OutputKey>POINT-GROUP</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Dipole" category="Multipoles">
+							<OutputKey>TOTAL DIPOL</OutputKey>
+							<OutputKey>DIPOL</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Quadrupole" category="Multipoles">
+							<OutputKey>QUADPOL</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Octupole" category="Multipoles">
+							<OutputKey>OCTUPOL</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Mean polarizability" category="Multipoles">
+							<OutputKey>MEANPOL</OutputKey>
+						</OutputGroup>
+						<OutputGroup name="Atomic charges" category="Charges">
+							<OutputKey>VESPA</OutputKey>
+							<OutputKey>COULSON CHARGES</OutputKey>
+							<OutputKey>MULLIKEN CHARGES</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBPhysicalModelEngines.ModelEngineVAMP" engineName="VAMP">
+						<SimpleEngineParameters>
+							<Value key="SCFCRT" type="double">0.00001</Value>
+							<Value key="ITRY" type="long">200</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{C375D95D-A0C4-4F21-936C-3CF84EA24D0B}">
+					<Name>Neural Network (29) Prediction (13)</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:23:33</DateCreated>
+					<DateModified>2024-03-09T15:23:33</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="6">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">6 (Input) - 6 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjYsMSwwLC0xLDEuNjk3MzYwMjAxMTA5NjE0NWUtMDE2LDAuOTk5OTk5OTk5\nOTk5OTk5NjcsMTA0LC0xLDkuNjA3Njk5MjUxNTYzODU1MWUtMDE3LDAuOTk5OTk5OTk5OTk5\nOTk5NTYsMTA0LC0xLC0xLjM4Nzc3ODc4MDc4MTQ0NTdlLTAxNywxLDEwNCwtMSwtNS4yMzA4\nNTg0ODE0MDY5ODgxZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk4OSwxMDQsLTEsOC4zMjY2NzI2\nODQ2ODg2NzQxZS0wMTcsMSwxMDQsLTEsLTEuMjAwOTYyNDA2NDQ1NDgyZS0wMTYsMC45OTk5\nOTk5OTk5OTk5OTk2NywxMDQsNiwwLDAsMCIKY29zdHcgPSAiMSwxLDAiCm1pZCA9ICIwIgpv\neWNvbCA9ICJYNyIKc3hjb2wgPSAiIgpzeGVuYyA9ICIiCnN5Y29sID0gIiIKc3llbmMgPSAi\nIgp4Y29sID0gIlgxLFgyLFgzLFg0LFg1LFg2Igp4c2NhbCA9ICIwLDEsMCwxLDAsMSwwLDEs\nMCwxLDAsMSIKeWNvbCA9ICJYNyIKeXNjYWwgPSAiMCwxIgo2IDYgMQolJQpfX19fX18Kc3Nz\nc3NzCnUKJSUKIyA0OSBjb25uZWN0aW9ucwojIGxheWVyIDIKMTExMTExMQoxMTExMTExCjEx\nMTExMTEKMTExMTExMQoxMTExMTExCjExMTExMTEKIyBsYXllciAzCjExMTExMTEKJSUKIyBs\nYXllciAyCiMgbGF5ZXIgMiBwZSAxCi0wLjQ5MDYzNDUwMTM0NTg4ODQzCjAuMzYwNjQ0MDA4\nMDgyOTQ5ODMKMC4yODM1ODgxMjgyNjY5NTY1NgowLjcxMzAxODkzNDAxMDI0NjE5Ci0wLjAz\nNDk1MjMzMTUyOTEyMzA4MgotMC43MzI5Njk5NTU3MTQ5NjM3MQowLjExODU2ODkxOTI2OTYw\nNzg3CiMgbGF5ZXIgMiBwZSAyCjAuNDM5MDc1MTY1MzY5OTAxNDkKLTAuMjMyMzk0MTExODM4\nMjEwMTUKLTAuMDUxMTA2ODg3ODgwMTQzMjEyCi0wLjc4MjE4OTgxNzk0ODA3Nzk2Ci0wLjA5\nMDEyNjYwMTM4NzU0NDk4MwowLjcxNTE4NzY5MzQ3NDQyNjEyCi0wLjAwNjg4MDEyMzg0MDA4\nMzUxNQojIGxheWVyIDIgcGUgMwotMC4zMjA1OTg1ODA3NTgyNTQ3CjAuMTY0NjgwMjM4ODY2\nMzM0MDEKMC4xMDM3NzQ1MzM5MzIwNjYyOQowLjkzNjEyNTEzMzI1OTI4MjQ4CjAuMTMzMzMx\nNjc4NDI3NTgwMDQKLTAuODE4MzUzMDQyNTcxNDUzMDMKLTAuMTIzNjgyOTQ2MzU3OTUzMjgK\nIyBsYXllciAyIHBlIDQKLTAuNDM1MDkxOTExODgzNjczMjQKMC4zMjczNTU0MDM2MDA0OTg4\nMQowLjA2ODkzNTQxNjcwMDU4MjIzCjAuNzkxNTUyMTc3ODU0NzMzODYKMC4wNjgwMzI5OTc0\nOTE5Nzk5NDEKLTAuODA2MzM0Njc1NDMyNTY3MzIKMC4wMzE2MDc3NzA5ODEzNTk4NjIKIyBs\nYXllciAyIHBlIDUKMC4zNjc0MzQwOTY1ODA1MTQ5NgotMC4yMzE1ODEwODEzMTI4NTQ0Mwot\nMC4xODU5OTM0MDExMzUzNTkzOQotMC44MDUxMjIyMjcxNDY3MTUxMQotMC4wNzI1MDg5Njg2\nNzE3NDY0MTUKMC44MDIxMzUxMjk2MTAzMTM2NAowLjAxNzg0Mjc5ODgzMDE4NTc2CiMgbGF5\nZXIgMiBwZSA2CjAuMzI4MjY1NDE3NzE3MzUyOTYKLTAuMDE4NjEzNDAwNDg3Nzg0MQotMC4w\nNzkwMTUyNzYxMjE0OTQwNzQKLTAuODgzNzg0NTQ5NTg1MzY4NzgKLTAuMjAzNjQ1NTk2NDg1\nMjM5NTgKMC43Nzc2Mjc3MTQzMDIyOTA5NAowLjA2OTQyMTY1Mzk5ODI4NTYwNwojIGxheWVy\nIDMKIyBsYXllciAzIHBlIDEKMC40ODAxOTA5OTkzMDI0MjY3CjEuNTczMTMzODIzNjg0NzAz\nMgotMS4xNzg2OTE0OTUxNTc1NDA1CjEuOTY2ODE2MDkwOTUwMzI2NwoxLjQ3MDI0MTg4MjA0\nNjMyODMKLTEuMTQ2ODgwMTcwMjc1MDMxOAotMS42MjQ3MDgzMjE4NjQ1MTA0Cg==</Value>
+							<Value key="NumTotalColumns" type="long">7</Value>
+							<Value key="NumPureInputs" type="long">6</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{C528F5D9-7798-4E52-B4E5-0B77C1574063}">
+					<Name>Neural Network (30) Prediction</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:24:52</DateCreated>
+					<DateModified>2024-03-09T15:24:52</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="6">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">6 (Input) - 7 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjYsMSwwLC0xLDQuNzc3MTYxNTcyMzA1MzYxNGUtMDE3LDEsMTA0LC0xLDEu\nMjMyOTg4MDcwNjE3MzYxNGUtMDE2LDAuOTk5OTk5OTk5OTk5OTk5MjIsMTA0LC0xLDUuMzM3\nNjEwNjk1MzEzMjUyN2UtMDE3LDAuOTk5OTk5OTk5OTk5OTk5NjcsMTA0LC0xLC02Ljk5MjI3\nMDAxMDg2MDM2MDdlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTY3LDEwNCwtMSw5LjgyMTIwMzY3\nOTM3NjM4NTZlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSwtNy42ODYxNTk0MDEy\nNTEwODM2ZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk4OSwxMDQsNiwwLDAsMCIKY29zdHcgPSAi\nMSwxLDAiCm1pZCA9ICIwIgpveWNvbCA9ICJYNyIKc3hjb2wgPSAiIgpzeGVuYyA9ICIiCnN5\nY29sID0gIiIKc3llbmMgPSAiIgp4Y29sID0gIlgxLFgyLFgzLFg0LFg1LFg2Igp4c2NhbCA9\nICIwLDEsMCwxLDAsMSwwLDEsMCwxLDAsMSIKeWNvbCA9ICJYNyIKeXNjYWwgPSAiMCwxIgo2\nIDcgMQolJQpfX19fX18Kc3Nzc3Nzcwp1CiUlCiMgNTcgY29ubmVjdGlvbnMKIyBsYXllciAy\nCjExMTExMTEKMTExMTExMQoxMTExMTExCjExMTExMTEKMTExMTExMQoxMTExMTExCjExMTEx\nMTEKIyBsYXllciAzCjExMTExMTExCiUlCiMgbGF5ZXIgMgojIGxheWVyIDIgcGUgMQoxLjcy\nMDcyNjMzNTI0OTk5MTUKMC4yMTczNTc5MTY5NjIxNjE0NwoxLjM5NzI3MTUzNTIwNjUwOQox\nLjY4NzMzNDU2NzM4MTU1NQowLjUyNjE1ODcwMDA4NTEzMDEKLTIuMTM5OTczODQ2MzI5Mzk5\nOAowLjA5NDQyMzMxOTg5NTY5MzMzMQojIGxheWVyIDIgcGUgMgowLjAzMTg4MTU3NjY1MTcz\nMjQ5NgowLjY0MDM0MTAxMTA2NTgxMTk4Ci0wLjc3ODY2MDMyMjAyMjI4NTg2CjEuMDg4NTc1\nMjUyNTIyNDY1OQowLjQ0MTkwOTQyMjEzNzM0MDE5CjAuMDAxMzAxOTk1NjI3MDg5ODAzOQot\nMC44OTEyMDcyMDI0OTYxODMyNAojIGxheWVyIDIgcGUgMwowLjY0MzU4Nzk3NTQwNTg2MDc3\nCi0wLjI1Njk1ODc4ODA0Nzc0NjQxCjAuNzg1ODM5MjY2MTU0MDc1ODQKMC41NTAwNTY0NzUz\nMDAyOTI0NQowLjE5MTU5ODU5ODMxMDUwMTg2Ci0xLjQ4MzkzNzY5MTI0MjIwNDYKLTAuNjQz\nOTkxNjU5NjA2OTE4ODQKIyBsYXllciAyIHBlIDQKNC4xNDE5MjQwNDkwMzMzMDE0Ci0wLjY0\nNTY1ODc5OTEyODMxMzI1CjIuMDEyNzkxMzk0MzA2Mjg3MgotMC45MTQyNzM0NDk3MzUzCi0x\nLjA4NDc3NTMyMjIwNDAwMzMKLTAuMzAwNzkzODYxNTg3NTE1NzUKLTAuNTE4NzQ2NzI2Mzkz\nNjA3MTkKIyBsYXllciAyIHBlIDUKMC41MDkxMjg1MTcwOTk4NjkxNwotMS4zODc1MDYwMDM3\nNzk5ODY5CjEuNDEzNTg0MDcxMDYwOTE1MQotMi4xNTA1NDc3NzM0OTMyMjI4CjAuODQyMTU3\nNzY5MzM4MTg0NDMKMS4zMzI4ODg5MzkwNDM2MDU2Ci0xLjA3NDQ0OTUzNDIzNzg1MjYKIyBs\nYXllciAyIHBlIDYKLTAuMjM1Njk5MTYzMTg5NDM5ODEKMC4wNDUzODQ1NDcwMTA4MTk3NTIK\nMS43OTk2Mzk5NDMwNzg0MDE4CjEuNjA0NzE2MTEzMDg5MDUzMwowLjA2MTQ2ODk4NTE5NTMw\nNTg1OQotMC44NzM0MTEzNTcxODAxNjA1CjAuMDk4NzA0ODU4MDQwOTQxMjI5CiMgbGF5ZXIg\nMiBwZSA3Ci0wLjMwODkwNzg3NzM4Mjk5OTgKLTAuNjU5MjE0NDg3NzAyNTI4CjEuMDkxMjM3\nMDI0NTY3MjkwNwowLjQ4OTY3ODgwMDA1ODg0MDI0Ci0wLjc5ODMwODcyNzkyMTEzMTUKLTEu\nODQ5OTU4MTEzNzMxMzI5NQotMC45MTg0MTAwNjUxODI2NjU5OQojIGxheWVyIDMKIyBsYXll\nciAzIHBlIDEKLTAuNjMzODQ0Mjk4NjUyMjI3OAoyLjM5NTE1MDA1NDYyNjA3MzYKMS40Mjk5\nNDM3MDg2MDkyNDA4CjEuODIzNjc5MjA5NDgzNTQwMQotMy41MDg1NjMwMTI1OTg1MjIzCi0y\nLjQ1NTQ3ODYzOTI2MDY4ODcKMi4xMjI2OTcyNjc5MjkzOTUyCjIuMDg5MTI5NzI2ODIxNDA5\nNQo=</Value>
+							<Value key="NumTotalColumns" type="long">7</Value>
+							<Value key="NumPureInputs" type="long">6</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{8EE76EE0-B16F-4028-9674-F245C6AEB804}">
+					<Name>Neural Network (31) Prediction</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:26:39</DateCreated>
+					<DateModified>2024-03-09T15:26:39</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="6">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">6 (Input) - 8 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjYsMSwwLC0xLDguMzI2NjcyNjg0Njg4Njc0MWUtMDE3LDAuOTk5OTk5OTk5\nOTk5OTk5ODksMTA0LC0xLDEuMDM1NDk2NDc0ODkwNzcxZS0wMTYsMC45OTk5OTk5OTk5OTk5\nOTkzMywxMDQsLTEsLTIuMTM1MDQ0Mjc4MTI1MzAxMmUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5\nNzgsMTA0LC0xLC00LjkxMDYwMTgzOTY4ODE5MjhlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5\nLDEwNCwtMSwzLjIwMjU2NjQxNzE4Nzk1MTllLTAxNywxLDEwNCwtMSwtMS4wNjc1MjIxMzkw\nNjI2NTA1ZS0wMTYsMSwxMDQsNiwwLDAsMCIKY29zdHcgPSAiMSwxLDAiCm1pZCA9ICIwIgpv\neWNvbCA9ICJYNyIKc3hjb2wgPSAiIgpzeGVuYyA9ICIiCnN5Y29sID0gIiIKc3llbmMgPSAi\nIgp4Y29sID0gIlgxLFgyLFgzLFg0LFg1LFg2Igp4c2NhbCA9ICIwLDEsMCwxLDAsMSwwLDEs\nMCwxLDAsMSIKeWNvbCA9ICJYNyIKeXNjYWwgPSAiMCwxIgo2IDggMQolJQpfX19fX18Kc3Nz\nc3Nzc3MKdQolJQojIDY1IGNvbm5lY3Rpb25zCiMgbGF5ZXIgMgoxMTExMTExCjExMTExMTEK\nMTExMTExMQoxMTExMTExCjExMTExMTEKMTExMTExMQoxMTExMTExCjExMTExMTEKIyBsYXll\nciAzCjExMTExMTExMQolJQojIGxheWVyIDIKIyBsYXllciAyIHBlIDEKLTAuMjUzMDQ0NTU4\nMjA5MTkxNTMKMC4yNTI2MDg2ODg4MjMyNDcxNgowLjM1NjQ2MzM5MjQ2MzMxMDE2CjEuMDgw\nMTEwNjA1ODkzNzMwMgotMC4xNDgyNzI2NjAzNDM2MzAxMgotMS4wNzE4MDc4NjgxNTgzMDQx\nCi0wLjA1MTUyNzMxMDQ3NTQ0NDUxNwojIGxheWVyIDIgcGUgMgotMC4yNTk1NjgyNzgyMDM5\nODY3NgowLjMyNDQxODc3ODAyNDk4MTg3CjAuMzc1NjI2OTAzNzkzMzg4ODEKMS4wNTMxNDE1\nMTYyNjU4Njc5Ci0wLjE1NDU4NDQyNjQyNDUyOTM4Ci0xLjA2MjE4NjUxMDM0OTUwNwotMC4w\nNzM0NzU0ODA3MDkxODYyMTkKIyBsYXllciAyIHBlIDMKMC4wNDEyNDUwNDg4ODIwMzM1NzgK\nLTAuMDQ5NTA5MzMzMzAyNjE4NjgzCi0wLjA1MjgxNjg0MzU5MTk5MjQ1Ci0wLjE4NTc4NzE2\nNjk4NzI0OTM0Ci0wLjAzNzIwNTE5MjUwNjkzODUxNwotMC4wMTM5OTM0MDg2NTIwNTQ4NDUK\nLTAuMTI3OTI4NTQyNTQ2ODIxODIKIyBsYXllciAyIHBlIDQKMC4wMjI0OTUxMDUwOTQ0MDU1\nOTIKMC4zMTg2ODc3MDYxNTc4NTM4NgowLjIyMjc3NzY0MzcxOTg2NzY0CjEuMTk4NzQ2MTgx\nMjk5NTY0MwowLjAzNzY0NjU5Mzk1ODIxNzI0OAotMS4yMTM4NjMzMDk0Nzc3MzkxCi0wLjE0\nNjc5OTYxNTIwODEyOTk1CiMgbGF5ZXIgMiBwZSA1Ci0wLjA0MTE5Mzc0NTgwNjQ0NzMwMgot\nMC4yOTkxODA3MjcwMzcwMzk4Ci0wLjI3NjY0MDE1OTAyNzM3MjA1Ci0xLjM5MjkwODA1OTM5\nNTMwMjcKLTAuMDAxODg1NTI0MDAwNTQ4NDk5MQoxLjQyMjAyODUyNjIyMzI1MDYKMC4xNDQy\nMjUwNTkxOTE5OTQxNgojIGxheWVyIDIgcGUgNgotMC4wNTQxMzIyNTc2OTYxNTI2OTQKMC4x\nNDM5NTU3NzUyMzQ5ODA3MQowLjA1NTIwNDcxNDEwMTUxNDYyNQowLjg0NjYzODM5ODM0Mzc2\nMzMxCi0wLjAwNTY0NDczMTUxNjE0NTI3MjQKLTAuNzA4NDkwOTIzMjAzMzc2MzcKLTAuMDIz\nNzQ5ODMyMzYxNDg3MzExCiMgbGF5ZXIgMiBwZSA3CjAuMTYwNTQwNjM0NTk1NjM1ODkKLTAu\nMzU1OTQ1NDYwNDEwMTEyNDkKLTAuMzg4Njg1NTg5MTQ1NDE4NAotMS4xMDM0Nzk3NDE4Mzk2\nMTc0CjAuMTM3NjIwMzEyNTY5OTk1MTMKMS4xNDg1NzcwNTYzNDc3NzI0CjAuMTM3MjAwNDQ2\nMzkyMjYwMTIKIyBsYXllciAyIHBlIDgKMC4xMzY2Mzk2ODI4NTcwMjc5MwotMC4yODMxMTYw\nMjU4MjAyOTg2Ci0wLjMzNDU3NTQyOTQ4OTMzODExCi0xLjI0NzY0MDYwMjA2Njk0NTkKMC4w\nOTM4NTg0MDgyNDUwNjk1OAoxLjIzNDk5MDc2Nzk2NzAxNjIKMC4xMDExMTIxMDgxNzIyODgx\nOQojIGxheWVyIDMKIyBsYXllciAzIHBlIDEKLTAuMTc2ODI5NDc0OTEzMzY4MjMKMS4yMDI3\nNDc4OTkyNDA2MjMxCjEuMTY4ODM5Mzc5OTE4NDA0NwotMC4zNzg5NzM2NDc4NDMwMDQxNAox\nLjc4MTM4NTU4MjYzMTg2OTkKLTEuOTg4OTI1NDI3ODYxMzYwOAoxLjgwNzgwNzE0MTgzMTYx\nNAotMS4yMjE4MjYzMTc2NDI0OTY2Ci0xLjQzNjExMTQ2MDg4OTQ5MDkK</Value>
+							<Value key="NumTotalColumns" type="long">7</Value>
+							<Value key="NumPureInputs" type="long">6</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{E3270E71-68DB-413E-A543-F88AF0AAC79D}">
+					<Name>Neural Network (32) Prediction</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:28:11</DateCreated>
+					<DateModified>2024-03-09T15:28:11</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="6">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">6 (Input) - 9 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjYsMSwwLC0xLDkuOTI3OTU1ODkzMjgyNjUwM2UtMDE3LDAuOTk5OTk5OTk5\nOTk5OTk5ODksMTA0LC0xLDEuMTM2OTExMDc4MTAxNzIzZS0wMTYsMC45OTk5OTk5OTk5OTk5\nOTk1NiwxMDQsLTEsLTEuMDY3NTIyMTM5MDYyNjUwNmUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5\nODksMTA0LC0xLC00LjI3MDA4ODU1NjI1MDYwMjNlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5\nLDEwNCwtMSw2LjkzODg5MzkwMzkwNzIyODRlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTc4LDEw\nNCwtMSwtMS4xMDQ4ODU0MTM5Mjk4NDMzZS0wMTYsMSwxMDQsNiwwLDAsMCIKY29zdHcgPSAi\nMSwxLDAiCm1pZCA9ICIwIgpveWNvbCA9ICJYNyIKc3hjb2wgPSAiIgpzeGVuYyA9ICIiCnN5\nY29sID0gIiIKc3llbmMgPSAiIgp4Y29sID0gIlgxLFgyLFgzLFg0LFg1LFg2Igp4c2NhbCA9\nICIwLDEsMCwxLDAsMSwwLDEsMCwxLDAsMSIKeWNvbCA9ICJYNyIKeXNjYWwgPSAiMCwxIgo2\nIDkgMQolJQpfX19fX18Kc3Nzc3Nzc3NzCnUKJSUKIyA3MyBjb25uZWN0aW9ucwojIGxheWVy\nIDIKMTExMTExMQoxMTExMTExCjExMTExMTEKMTExMTExMQoxMTExMTExCjExMTExMTEKMTEx\nMTExMQoxMTExMTExCjExMTExMTEKIyBsYXllciAzCjExMTExMTExMTEKJSUKIyBsYXllciAy\nCiMgbGF5ZXIgMiBwZSAxCi0wLjExMTkyODE2NTcxNzgwNzA1CjAuMzI3NjAzNzk2Njc0ODgw\nMDQKMC4yNTU4NTk3NjQxNjc3MjIyMQowLjgyNTE1MzA1Nzc3MzEzOTQxCi0wLjA0NjQwMTQw\nNzgwNDg4MzQ3MQotMC44MDUxNzIyNjczNzMwNzg3OQotMC4wMjI0NDY5MTkzNjk4ODMyODYK\nIyBsYXllciAyIHBlIDIKLTAuMTgwOTgwMTAxODM5NjIxMjQKMC4yNTY1MTk3ODQyNzY2OTMz\nMQowLjIzODI5NDIyODYwODU0MDg1CjAuODEyNDQ2MjY1NDU4NDMxNzkKLTAuMDM2NTQ4Nzg1\nNTM2MzEwMTA4Ci0wLjgxNDc0MzMwNjU2NTIzMTMxCi0wLjAyNDU0NDQ2MTE1ODYwNjA2OQoj\nIGxheWVyIDIgcGUgMwotMC4wMjIwMTI1NTAxMzEwMjQ2NDUKMC4wNDc0Nzg5MDc5ODc0NTI0\nMjYKMC4wNDM4ODk5ODQ3MjI2OTYyNzgKMC43MzIyMjM4NDg3Njc5NTY0MwowLjA3NDY2MDQ1\nNjQ5ODUxOTE1NwotMC43MDk5Njg1ODMxMzI1ODU3MQotMC4wNDIzNjcwOTgzNTk3OTI3MjIK\nIyBsYXllciAyIHBlIDQKMC4yMDg4OTkwODc1MjUwMzI0NwotMC4xODM4MDQ2MjQ0MjIxNDc1\nMQotMC4xNTU4ODI5NjQ0MzMzMzcxNgotMC45MDkwMzU3Njg3OTgyNzA5NwotMC4wNjg3NzI5\nOTM2MTcyMzAyNTgKMC45NzE5MDIyNzc2MjY5MDI3MwowLjA1ODc3Njg3NjA5ODM0ODM5OAoj\nIGxheWVyIDIgcGUgNQotMC40MjM5NDgxMDUxNzQ5MTMzOAowLjE1NzI3MzY4NzM3MjUwODY2\nCjAuMTg2OTM3NDM3ODU1Njk0OTIKMC44NTY0ODk3NzIzOTQ5Nzc3CjAuMDE5NDMzNDA0NDk4\nOTk4MDA3Ci0wLjkwNzQxNDExNTUwNjUzNTUKLTAuMDQ1MTU5NDc2OTA0NDA0NDU4CiMgbGF5\nZXIgMiBwZSA2CjAuMjM4MjEyODc0NDkwMzM5OQotMC4yNTk4NzQ5NDQzNTA1MjIxNgotMC4x\nOTQ0NDMyOTY3MTQ5MjEyMgotMC45MDEyODI0MjE4NDM3NDE0MQotMC4wMzM4ODM4OTg3MTEw\nMzQyNjIKMC45NjUyNjUyOTQ1OTAyMDkwNAowLjA1NjAxNzMxODczNDM3ODExNwojIGxheWVy\nIDIgcGUgNwowLjM5MzU5MTcyOTY3ODA4NTY0Ci0wLjI5NjM0OTM5NDU1Njc3ODE3Ci0wLjI0\nMzI1NzczODM1NTE0NTc1Ci0wLjkxNzc5MDc5MzExNjI1MwotMC4wMDA4MDI0NTY2NzY5NjM4\nNTk5NwoxLjAyMDEyOTczMjcyNDQxNjEKMC4wNTU3NjA5MjYyNTIyNzIxOTkKIyBsYXllciAy\nIHBlIDgKMC4zMjUyNjIxMDA2MTExMDY1NQotMC4zOTEwMzE3ODExNzU3MTA0NwotMC4zMTYx\nODM2NTgyMjczNDI0NgotMC44NTQ5ODc4MzY1NzUwOTYyNQowLjA2MjE3NTc1NTg1NDA2NDQw\nMgowLjg4MTEzNjgyMzg4NDM1OTc3CjAuMDIyMzc0MTA0ODgxNzk0NTI5CiMgbGF5ZXIgMiBw\nZSA5Ci0wLjE4ODE5NjYwNjI2MTM3NTMzCjAuMDk3NTQyMjAxNDEyNzE0ODcxCjAuMTQyODY4\nOTYwNTM2MDkwODMKMC44NTg4NzU2MzIzNTYzNDAxMgowLjA2MTMxNTkyODA0NzU4NzE5Ci0w\nLjkwMTQwNTg4ODE0Mjc5ODg3Ci0wLjA1MTU4NTc3MzEwMDg4MzQ5CiMgbGF5ZXIgMwojIGxh\neWVyIDMgcGUgMQowLjA1OTkzMjA1Mzg1NDYxODc3OAoxLjQzMDQwMjM2MDI3MTgwMjgKMS4z\nMjAzMjY4NTQyNTg3MDUyCjEuNTM0OTcyNzI3MzA1Nzg5NAotMS40MTU1MDczODUzOTYwOTU2\nCjEuMzAyNjc2MDY2MjAyNTI5NgotMS40MTczMDE4NjMzMTQyODY5Ci0xLjMwNDY2Mzg3MzUz\nMzM0NAotMS4yNjQzMjE1NTA0NTIyMDcyCjEuMzIxMzcwOTI2MTMwMzAwNAo=</Value>
+							<Value key="NumTotalColumns" type="long">7</Value>
+							<Value key="NumPureInputs" type="long">6</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{6DC865C8-980F-4FD9-890E-457AB5BC957C}">
+					<Name>Neural Network (33) Prediction (2)</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:30:11</DateCreated>
+					<DateModified>2024-03-09T15:30:11</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="6">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">6 (Input) - 11 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjYsMSwwLC0xLDEuMDM1NDk2NDc0ODkwNzcxZS0wMTYsMC45OTk5OTk5OTk5\nOTk5OTk4OSwxMDQsLTEsMS4zODc3Nzg3ODA3ODE0NDU3ZS0wMTYsMC45OTk5OTk5OTk5OTk5\nOTk1NiwxMDQsLTEsMS40OTQ1MzA5OTQ2ODc3MTFlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5\nLDEwNCwtMSwtNC4wNTY1ODQxMjg0MzgwNzI0ZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk4OSwx\nMDQsLTEsMS4xMTAyMjMwMjQ2MjUxNTY1ZS0wMTYsMSwxMDQsLTEsLTkuNjA3Njk5MjUxNTYz\nODU1MWUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5ODksMTA0LDYsMCwwLDAiCmNvc3R3ID0gIjEs\nMSwwIgptaWQgPSAiMCIKb3ljb2wgPSAiWDciCnN4Y29sID0gIiIKc3hlbmMgPSAiIgpzeWNv\nbCA9ICIiCnN5ZW5jID0gIiIKeGNvbCA9ICJYMSxYMixYMyxYNCxYNSxYNiIKeHNjYWwgPSAi\nMCwxLDAsMSwwLDEsMCwxLDAsMSwwLDEiCnljb2wgPSAiWDciCnlzY2FsID0gIjAsMSIKNiAx\nMSAxCiUlCl9fX19fXwpzc3Nzc3Nzc3Nzcwp1CiUlCiMgODkgY29ubmVjdGlvbnMKIyBsYXll\nciAyCjExMTExMTEKMTExMTExMQoxMTExMTExCjExMTExMTEKMTExMTExMQoxMTExMTExCjEx\nMTExMTEKMTExMTExMQoxMTExMTExCjExMTExMTEKMTExMTExMQojIGxheWVyIDMKMTExMTEx\nMTExMTExCiUlCiMgbGF5ZXIgMgojIGxheWVyIDIgcGUgMQotMC4wNzEwOTI4OTc0ODYyNDQ2\nMwowLjE3NDQwNzIzMTYzMDY2MDQxCjAuMTM0MDMwNzYwMTk4OTE2NzQKMC45ODI5OTA4NzU3\nMTUwMTQ2NAowLjA3MzA3MjQwMjAxNjM4NDE5NAotMC44MTc0NjM2MzcxNzEwNTcwOAotMC4w\nOTI5OTQyNzM1MDI3MjEzMTEKIyBsYXllciAyIHBlIDIKLTAuMTkyNjAxMjIxNzc0MTY3NDEK\nMC4yMzU2MDM0NTA2MTg1MzcxOQowLjE4Njc4NTM1NjEwNjQxMjI4CjAuNjE3NjcxOTQ0NzM2\nNzU4MDIKLTAuMTMzNTkxMjQ5MTYzOTg1NDkKLTAuNDY5ODQyMTg0MjcwNjYyOTkKLTAuMDA3\nODcxNDA1NDM2MjI5MDU0MwojIGxheWVyIDIgcGUgMwotMC4wODU0NzM4ODI4OTg0NTUwMzQK\nMC4xMTQ5MTAxODIzNjgxOTUxNwowLjA2MzIwMzk0MzkzMDk1NTE3MwowLjc3NjE2MDkyMTcz\nNzIxOTg0CjAuMDIwMTM2NDkxNDYxNzI2MzU0Ci0wLjgyNzA0NDEyNzg3MTcxMjIyCjAuMTY5\nODYxNjE2NzQ4Njg4MwojIGxheWVyIDIgcGUgNAotMC4yNzIxODM4NzYwNDQxNjQzMwowLjI0\nNTYxOTY3MTA1NTU4ODg4CjAuMzYyMDQyOTE3OTAxODg2OTIKMC42NDAwNTM0MTk4MDk4NzQ3\nNAotMC4xNDk1NDg5MDgxOTQyMzI0NAotMC42NDU1MzE0NjAxNTc2MDIxCi0wLjAwMDQ2Njgy\nNzQ3MjYxMTM3NTM0CiMgbGF5ZXIgMiBwZSA1CjAuMzgwNjc3NjkwMTI5NDk0NDMKLTAuNDI5\nMjIxMzI0NDI0MzQwNjkKLTAuMzIwOTY0NTkxOTE4NzI0ODQKLTAuODIzOTAwMjc4NDgxNzYy\nODQKMC4xODU5NTUwMzA0NjE3MTYwOAowLjg2NTk3MjY5MzY3MTI2NDM5Ci0wLjExMDM3NzU4\nOTkwMzMxMTE5CiMgbGF5ZXIgMiBwZSA2Ci0wLjE4NDUzODUyODkwNTM1NzMKMC4xNzY5MzY0\nOTgwMjY5NzI3NQowLjIwMDg3ODkzMzE5NjY3OTQ5CjAuNjg3NDE0MjEzMDI2ODI1MDQKMC4w\nMzU1MzU5NjQ0NDU2ODgyMjYKLTAuNzkwOTMzMjM4MjU1MjI0ODgKLTAuMTQzMzc3NTUyMjY2\nNDQ4NTIKIyBsYXllciAyIHBlIDcKLTAuMDg0OTI5OTE0MzA2NDAyMzAyCjAuMTQwMDA3NDM2\nMjA1MjQwNzMKMC4yMzQ0MjIzNTM4NjI1OTE4NgowLjk1MzIxNzYyMDE4Nzg2OTE1CjAuMDA4\nODk5MDY5NTAyNjA1NzQyNQotMC44NzMzMDQ4ODE1NDY4MTc0Ci0wLjEwNTMzMzk0MDc1ODU2\nOTc2CiMgbGF5ZXIgMiBwZSA4CjAuMDQ3Mjc1MjMwMzIwMTMzMjA2Ci0wLjE4NTQ5OTAwNjgx\nMDkyMzU3Ci0wLjI5MzE2NDMwMjczNzczMTAzCi0xLjI2MzY2MjA0MDY5MTg3NjYKMC4wMzUy\nNjc4NjM3NDMxNTYyOTcKMS40MTIzNjcwNDgxNDYyNDI3CjAuMDE0NzA3MzMyMjM0NjczNTMx\nCiMgbGF5ZXIgMiBwZSA5Ci0wLjA4MzAyMDAxMTk3NDcxMjE0OQowLjIzMjc2MDUwNjAzMzU2\nNzU0CjAuMDczNDEzMjc0MDI1NTAwNzY5CjAuOTEzNDgxOTg2OTYzOTQwMzQKLTAuMDE2NDEx\nNjAyNDI3ODE4NDU5Ci0wLjgwOTk4MzU3NDI5ODYyOTExCi0wLjA3ODg4MTY4NzcwNzE3ODU1\nOAojIGxheWVyIDIgcGUgMTAKMC4yNDA2NjU0NTE3NjYyNzkyNAotMC4yOTM0MTY5MzQ5NjUw\nNjI3MQotMC4wODExMTA1MjQzNTM1MDE0NAotMS4wMzE2NTA1MDE3MDAzNTAzCi0wLjA1NjY5\nNjU0MDUzMDk1NzQ3NgoxLjE1MjUyMDA5MjY2OTMzNjIKMC4xMjYwNzk0NDM0ODM3Mzg0CiMg\nbGF5ZXIgMiBwZSAxMQowLjI3OTIwNDc3NzM4MDcyNzA4Ci0wLjMzMjI0OTQ3MTIxNzkwNjI3\nCi0wLjI4OTU5NDcyNDcwOTA3NTgyCi0wLjg4NDIwNDQ3NTk0Nzk0MzcxCjAuMTg3NzMyNTg4\nMDMyNDg2NTIKMC43ODc2MDMxNjIwMzM5ODc5NQowLjA0OTU0ODIxODEyMjg1MjY4NAojIGxh\neWVyIDMKIyBsYXllciAzIHBlIDEKLTAuMjExNDk5NzAxNjc4MTI5MgoxLjEzODkxMDMzNzgz\nNDgyMjQKMC42MzUwNTcyMTc3NTcyMTQxMwowLjk5MzQ1ODk1NjQ4NTM1ODk4CjAuODE1Mjg0\nNDYzNjEyMTQxMTMKLTEuMDY1NzI5Mzk0OTEwNTg1MwowLjkyMjczNTk5MzIwMDQ2ODczCjEu\nMzg5MjA5NzgwMzg4NjQzNAotMS44Mzc4NDM2NzI1OTU5NzIxCjEuMjIxNjg3NTk3NTQxNzg4\nNQotMS41MTk4NDI1Njk1MDQ4MDY2Ci0xLjA1NDQyMjkwNzgwNzI4NjYK</Value>
+							<Value key="NumTotalColumns" type="long">7</Value>
+							<Value key="NumPureInputs" type="long">6</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{18F06AE5-D0BB-4393-807F-9B0187D2CED9}">
+					<Name>Neural Network (34) Prediction (7)</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:37:10</DateCreated>
+					<DateModified>2024-03-09T15:37:10</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="7">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Hydrogen bond acceptor" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X7</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">7 (Input) - 6 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjcsMSwwLC0xLDUuMzkwOTg2ODAyMjY2Mzg1N2UtMDE3LDEsMTA0LC0xLDEu\nMTUyOTIzOTEwMTg3NjYyN2UtMDE2LDAuOTk5OTk5OTk5OTk5OTk5MzMsMTA0LC0xLDIuMDI4\nMjkyMDY0MjE5MDM2MmUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5ODksMTA0LC0xLC00LjgwMzg0\nOTYyNTc4MTkyNzVlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSw5LjcxNDQ1MTQ2\nNTQ3MDExOTdlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSw1LjIzMDg1ODQ4MTQw\nNjk4ODFlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTc4LDEwNCwtMSwtMS4wNDYxNzE2OTYyODEz\nOTc2ZS0wMTYsMC45OTk5OTk5OTk5OTk5OTk4OSwxMDQsNywwLDAsMCIKY29zdHcgPSAiMSwx\nLDAiCm1pZCA9ICIwIgpveWNvbCA9ICJYOCIKc3hjb2wgPSAiIgpzeGVuYyA9ICIiCnN5Y29s\nID0gIiIKc3llbmMgPSAiIgp4Y29sID0gIlgxLFgyLFgzLFg0LFg1LFg2LFg3Igp4c2NhbCA9\nICIwLDEsMCwxLDAsMSwwLDEsMCwxLDAsMSwwLDEiCnljb2wgPSAiWDgiCnlzY2FsID0gIjAs\nMSIKNyA2IDEKJSUKX19fX19fXwpzc3Nzc3MKdQolJQojIDU1IGNvbm5lY3Rpb25zCiMgbGF5\nZXIgMgoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTEx\nMTExMQojIGxheWVyIDMKMTExMTExMQolJQojIGxheWVyIDIKIyBsYXllciAyIHBlIDEKLTAu\nMjg0MTk1MjY4MzYzNzY0NjMKMC4yOTYzNTg0Nzk4ODYwNjgzOQowLjE4NzU5NzY4Mjc3MDAw\nMDkxCjEuMDUyMDc2NTM4Njk2OTg2OAowLjI1MTk3OTc2Mzg1NTI3NDYKLTEuMzQ5NzE0Mzcz\nMzExMDc1NwotMC4xMDY1NzUzMDgwMDY2OTMwNAotMC4xNzUwMTk1ODc4ODM5OTEyMgojIGxh\neWVyIDIgcGUgMgotMC4wMTI1ODY2NDMzMzA4NzMzNzUKMC4xNjI3OTM0MDIxMTI2MzMxNgow\nLjQ5NzkxMTE5NDIwODUzMjQ3CjEuNjMxNDU1OTc1Mjg4ODEzOAotMC4yNDM0NjczMTgxNjI3\nNDc4OQotMS42MDIzOTQwNjM3Mjg0NTA0Ci0wLjAyMDc2NTA1MzA1NDU0NjIyCi0wLjEzMzkx\nMTY1NjM2NzQ2NzEzCiMgbGF5ZXIgMiBwZSAzCi0wLjkzNDI2MzYwMTY2OTIyMjczCjAuOTg2\nMDQ5NzQzNDM1NzUzNjkKMC40MzA0NTI1Mjg5MTc2MjcyCjEuNjA1ODQ2OTgyMjQ3NDYzNwot\nMC44Mzc2Njc0MDA3OTIwNzEwMwotMC42NDE4NzgzODkyNDcxNjczNAowLjE5MDc2MTUxMzg4\nOTUwNjQ2Ci0wLjA4NjczMjI3MzkyMjgyNzg2OAojIGxheWVyIDIgcGUgNAowLjIwNDgxOTUz\nMzE3NDQ2OTM1Ci0wLjE4NjA1Mjg0MTMxMTg1NjkzCi0wLjIzNTkyNzI0NTMzMTI3MzYKLTEu\nMTEzMzY3NDMxNjM4NDU5NgotMC4yMTM4ODIwMTk2MDg3NDM0MgoxLjM5MjUyODMxNTk0MDYz\nMzkKMC4xNjAwMjUxODUyMTY4NzU5OAowLjEzMTc3MDk1NzA1ODk5NzIyCiMgbGF5ZXIgMiBw\nZSA1CjAuMTg5NzU1NDU2MjE0NzUwMjkKLTAuMDg4NjAzMzMzNjczMjYwMDM3Ci0wLjE4ODgz\nNTYzMTIxOTU1NzgyCi0wLjk4NjU2ODYwNjI1MTQ5NjEyCi0wLjE2NzExNzAxMzYzNTg1Njkz\nCjEuMjAxOTE0NDE3MzY0NjA1MgowLjEyODg1Mjk2NTIxMTAzOTQ4CjAuMTI2MjAyMDcxNjY2\nNTMwNjkKIyBsYXllciAyIHBlIDYKMC4zODk1OTQ1NDAwNjI5NTM5MQotMC40MDYxOTQ3NDkx\nNjY5MTQ4NAotMC4xOTY0NjAxMTM4OTA1MTc4NQotMC45MTY1MzY4ODMwMjQ1ODE4MQotMC4x\nNDkxMTgyMTcyNDM2NTI4MgowLjk3ODk1OTU1OTg5NTE3MDM2Ci0wLjI4NTk0OTkwOTM2NjM3\nMjI3CjAuMTIyMjMxMDMwNDgxOTU5NTIKIyBsYXllciAzCiMgbGF5ZXIgMyBwZSAxCjAuMzE1\nNjQ3OTk0NDY2NTM3MDIKMS45NjQ0NDE2NjUwNDMwNTkyCjIuNDQwNTk4NDE0NjgwMzM3Nwoy\nLjA2NzMwODM0NDUxNDY3NTIKLTEuODcwMjY1MjgxOTY2NTYxNQotMS42MzM5MTc0MzcxNTY0\nMTY3Ci0xLjUyMDk1MjA4NDIwNzcxOTgK</Value>
+							<Value key="NumTotalColumns" type="long">8</Value>
+							<Value key="NumPureInputs" type="long">7</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>4.68269230769231</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>2.98300826552212</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{0466B2A6-18A2-462F-B48E-6B95615E8FCD}">
+					<Name>Neural Network (35) Prediction</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:38:20</DateCreated>
+					<DateModified>2024-03-09T15:38:20</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="7">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Hydrogen bond acceptor" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X7</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">7 (Input) - 7 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjcsMSwwLC0xLDEuMTUyOTIzOTEwMTg3NjYyN2UtMDE2LDEsMTA0LC0xLDEu\nNDU0NDk4OTE0NDcyODYxNWUtMDE2LDAuOTk5OTk5OTk5OTk5OTk5MzMsMTA0LC0xLC0xLjYw\nMTI4MzIwODU5Mzk3NTllLTAxNywwLjk5OTk5OTk5OTk5OTk5OTY3LDEwNCwtMSwtNS43Mzc5\nMzE0OTc0NjE3NDcxZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk4OSwxMDQsLTEsNy40MTkyNzg4\nNjY0ODU0MjE5ZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk2NywxMDQsLTEsNS41NTExMTUxMjMx\nMjU3ODI3ZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk3OCwxMDQsLTEsLTguNzAwMzA1NDMzMzYw\nNjAxNmUtMDE3LDEsMTA0LDcsMCwwLDAiCmNvc3R3ID0gIjEsMSwwIgptaWQgPSAiMCIKb3lj\nb2wgPSAiWDgiCnN4Y29sID0gIiIKc3hlbmMgPSAiIgpzeWNvbCA9ICIiCnN5ZW5jID0gIiIK\neGNvbCA9ICJYMSxYMixYMyxYNCxYNSxYNixYNyIKeHNjYWwgPSAiMCwxLDAsMSwwLDEsMCwx\nLDAsMSwwLDEsMCwxIgp5Y29sID0gIlg4Igp5c2NhbCA9ICIwLDEiCjcgNyAxCiUlCl9fX19f\nX18Kc3Nzc3Nzcwp1CiUlCiMgNjQgY29ubmVjdGlvbnMKIyBsYXllciAyCjExMTExMTExCjEx\nMTExMTExCjExMTExMTExCjExMTExMTExCjExMTExMTExCjExMTExMTExCjExMTExMTExCiMg\nbGF5ZXIgMwoxMTExMTExMQolJQojIGxheWVyIDIKIyBsYXllciAyIHBlIDEKMC4xNzE0NjY2\nOTIzNzM2NDE1NAowLjI3OTM5NDQ0OTUzMjk3Mzg4CjAuMzUwOTA3OTU0MTM5OTg0ODgKMS41\nODQxMDQ1NDQ0NTczNzIzCi0wLjU5NTA5NDQ3MDEzODUxNDY5Ci0wLjQ3NTAzOTM0ODc5Njgx\nMTA5Ci0wLjAwNDI4MjAyNTExODg4NTMyNjEKLTAuNDAyODcwNzAwNDY0ODI0MzIKIyBsYXll\nciAyIHBlIDIKLTAuMzUxNzA5MDU3NzQxMTg5ODgKMC4zNTg5NzY0NTY0OTUyMjk1OAowLjEz\nODg3NDM0NzgyODk5MzgzCjAuNTQ3NjQyNzEzMjMwMDEwMjQKMC4zMzY4OTgwNzIyMjgwNTA4\nNQotMS41MzUwMzY2MjQ5MDU3NDgxCi0wLjAxODQ2NTAyNjI5MTgzMjY3OQowLjM2MDM5OTMz\nMTE3MjAxODM5CiMgbGF5ZXIgMiBwZSAzCjIuNDAzMzIzMDIyMDY0NTE3NgotMS40MjU4Njc4\nMTA3MjY1MDQxCi0wLjEzMjU2MzU2ODY3Njc4NjA5Ci0xLjgxMzQ3NzU0MzE2MzQxMjUKMC41\nMzcyOTU5Mzg0ODc1NTk2MwotMC41NDY0NjUzMDUxNjg5NTA1MwowLjEwNTA2OTQzOTc0MTMx\nOTI3CjEuMTg0NjczNTI5NDk2MTMzCiMgbGF5ZXIgMiBwZSA0Ci0wLjM4MzM1NDU5NzEwOTg3\nMzA3CjAuMDcyNDQxMDQzMjc1NzgxMjY5CjAuMDcyNTQwNTg1ODQ3ODI4NTQ4CjAuNzM1OTIx\nMDE4MjQ0NDA0NDgKMC41NzY3MjgxOTc4NTAwNDE4MQotMS43NzAxNjg0MTg1NDA5NjY1Ci0w\nLjA2NTY2MTYyNjQ1MzIyOTk5NgowLjUwMzk5NzU3OTIzNTgzMjU1CiMgbGF5ZXIgMiBwZSA1\nCi0wLjIxMTc5MTc2NjM4OTUzNjM0CjAuMjIwNzA2NDIwNTQxNzM0OTgKMC4wMjk4ODE4MTY0\nNTU5MjcwNjUKMC42OTQyMzEyNDY4NDU0ODQ1NAowLjI4ODc2NDA3NTk2MzU3NDkKLTEuMjU3\nNDE1NDAzNzI3MzEzOAotMC4wODQwMTkxMTg4NDczMzgzODQKMC4wNTQwMDM1NzAxNDkzMjg4\nOQojIGxheWVyIDIgcGUgNgotMC41MTI2NjEwODk0ODQ1MjI2Ci0wLjMyNjY3MDkwMTU3ODEy\nNjEyCi0xLjExODI0NDAxMzUwNjQzNzgKLTEuODM0MjgxNjY1MTU0MTY0CjAuOTQyMzQ1MjAz\nNDQ5MjA5NTgKMC4zOTY0MTkxNTE1NzA0MTc5NgowLjE1MjA0MjU2MTIyNjU1NjM4CjAuNTQz\nMzI0MDE3Mzg1MTc0CiMgbGF5ZXIgMiBwZSA3Ci0wLjg5NjgzOTU1OTAxNzg4MjgxCi0wLjAw\nNTA4NjE2NjE5MzMwNDgwNTgKMC4zMDAzOTY5MjM1MTk2MzQ0OAotMC45OTI4NjMyNjY0NDA5\nMzUxNAotMC4zMjk3MjY4ODAzMjMzNjc3OAoxLjkzNzIzNTE4ODUzNjUzNzEKLTAuMzk0NzE4\nNzMxMDM3MTU3NTQKMC4wMjYyMDY4Nzg4NDA2NDQ4MjEKIyBsYXllciAzCiMgbGF5ZXIgMyBw\nZSAxCjAuMjkxMzE5Njk4MTEzODA5ODEKMS43MjQ4MDIzNTc2MTE3NTMzCjEuOTEyMzM4OTEw\nNjM3ODE1NQotMi4yNjg4MDI2MDI1MjY5NTE0CjIuMTI0MDQ5ODU4MzA5NjIyMwoxLjYxNjA0\nMjIzOTE3NzI2MjQKLTIuMTMxNTcyNjYxNjE2ODA3NAotMi4wODM1NDExNTc0MjYyNTAxCg==</Value>
+							<Value key="NumTotalColumns" type="long">8</Value>
+							<Value key="NumPureInputs" type="long">7</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>4.68269230769231</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>2.98300826552212</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{F4468463-B415-4E5B-99E0-1A6AF738D521}">
+					<Name>Neural Network (36) Prediction (5)</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:55:52</DateCreated>
+					<DateModified>2024-03-09T15:55:52</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="7">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Wiener index" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X7</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">7 (Input) - 6 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjcsMSwwLC0xLDUuMzkwOTg2ODAyMjY2Mzg1N2UtMDE3LDEsMTA0LC0xLDEu\nMTUyOTIzOTEwMTg3NjYyN2UtMDE2LDAuOTk5OTk5OTk5OTk5OTk5MzMsMTA0LC0xLDIuMDI4\nMjkyMDY0MjE5MDM2MmUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5ODksMTA0LC0xLC00LjgwMzg0\nOTYyNTc4MTkyNzVlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSw5LjcxNDQ1MTQ2\nNTQ3MDExOTdlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSwtMi4xMzUwNDQyNzgx\nMjUzMDEyZS0wMTgsMC45OTk5OTk5OTk5OTk5OTk2NywxMDQsLTEsLTEuMDQ2MTcxNjk2Mjgx\nMzk3NmUtMDE2LDAuOTk5OTk5OTk5OTk5OTk5ODksMTA0LDcsMCwwLDAiCmNvc3R3ID0gIjEs\nMSwwIgptaWQgPSAiMCIKb3ljb2wgPSAiWDgiCnN4Y29sID0gIiIKc3hlbmMgPSAiIgpzeWNv\nbCA9ICIiCnN5ZW5jID0gIiIKeGNvbCA9ICJYMSxYMixYMyxYNCxYNSxYNixYNyIKeHNjYWwg\nPSAiMCwxLDAsMSwwLDEsMCwxLDAsMSwwLDEsMCwxIgp5Y29sID0gIlg4Igp5c2NhbCA9ICIw\nLDEiCjcgNiAxCiUlCl9fX19fX18Kc3Nzc3NzCnUKJSUKIyA1NSBjb25uZWN0aW9ucwojIGxh\neWVyIDIKMTExMTExMTEKMTExMTExMTEKMTExMTExMTEKMTExMTExMTEKMTExMTExMTEKMTEx\nMTExMTEKIyBsYXllciAzCjExMTExMTEKJSUKIyBsYXllciAyCiMgbGF5ZXIgMiBwZSAxCi0w\nLjQzNjg0NDg4NDQ0MzIzOTU1CjAuMzA1NjU5NDMwMzE3NzM2MTIKMC4zODExMjY5OTMzNDA1\nNTU0NAoxLjExNjU5NzQ5OTM3MTE5MzgKMC4wNDM4NjQ3MTE2NjQwMTI0MjkKLTEuMTQ2Mjk0\nNDM2NjM4NDYzMQowLjIzOTc2NDQ1MjUxNTUxNDkzCi0wLjIwNDY2NDExMzk4NTM2MjMzCiMg\nbGF5ZXIgMiBwZSAyCi0wLjA1NTQwMzE0ODI1MzUyMjI3MgowLjI4MTYzMjIyMDY2MTE4MjE1\nCjAuMzY0MzMyNTg3NDU2MDE2MzIKMS41MTcwNjIyMTU0MzM0NTcyCjAuMDM3MDEzNDQxNTU0\nMzQxMDUzCi0xLjg0NzYyODQ3MDU1NTEyMzYKLTAuMTU3OTAzMzMyNDQ0MTQzNTMKLTAuMTgx\nMjExMzM3NTM4NjAwMjIKIyBsYXllciAyIHBlIDMKLTAuOTI5OTcwMzUxOTUxNjAyNgowLjg3\nNDk3MDU4MTg4NTQ3NzQ5CjAuNjAzMjEzMzgwMDg3MjE1MjYKMS43ODcxMDIyODE5NTkyNjcy\nCi0wLjkxMzQxOTE4NjUwODEzMzgxCi0wLjc3ODE4OTg4NzgxODI3MDkyCjAuMTY4NDY4NTM2\nMzM0Nzc0NAotMC4xMzE2NzE1Mzc3NzUzMjMxNAojIGxheWVyIDIgcGUgNAowLjIxODUwMTg2\nNTEyNDIwMzM5Ci0wLjE5NjMxNDkxMTI3NzQ4NTQKLTAuMjMyMTQwODc3NzMxNzA2NzIKLTEu\nMTkzMjY5NTgxODM1OTUKLTAuMjUzMDUyMDE2NjQ1ODM3OTMKMS40ODkxMTI2NjE1MDI4ODYy\nCjAuMDQ5MTUyODgyMzkxOTI2NTQyCjAuMTI3MjIwNzAzMjk2MDk4MzMKIyBsYXllciAyIHBl\nIDUKMC4xODI3MTMzNzAzODgwMDU5NwotMC4xNjA3ODM2NTk0MzkzNTA3NwotMC4xNjY2MzE1\nNjE2MDQ2Nzk5MwotMS4wODg1NzAyMTczNDI2MTM5Ci0wLjIyNDUyMzQ3NjczNDYyMjYxCjEu\nMzYyNzkyMzI2ODIwMjY2CjAuMDY2NjgwODIxNDE5Njg4MjcxCjAuMTIwMzgxNDM4NTkxODA4\nOAojIGxheWVyIDIgcGUgNgowLjI3MDM3ODA5NTg4NDEwMzcyCi0wLjI5MDUwNzg3NjY2MTY5\nOTc1Ci0wLjIzNzM5MzcwMzczNzE1MDE5Ci0wLjk1OTgzMTYzMzcyODAzOTQ4CjAuMTE0MzEy\nNzU4OTQ3NzU2NzUKMC44MTU0NTU1MTAyNzAxODE3CjAuMjUyMDkwNDk4MDY4NzkzNTIKMC4x\nMzE3MTEzMjkyOTAzODc1MQojIGxheWVyIDMKIyBsYXllciAzIHBlIDEKMC4zMzY3NzgzMTE2\nNTU1MTk5MQoxLjc2NzYzMzUwMDY5NzkxNDMKMi41MjMxMTgyMzM2MzM3OTM0CjIuMjEwNTQ5\nNjU1NTA1NTUwNgotMS44OTkwNjgwMzk3MTUzODEyCi0xLjc3NTY0ODQ4MDAwMDk3MTEKLTEu\nMjg3NTA4NTUwNDgxMDkxMwo=</Value>
+							<Value key="NumTotalColumns" type="long">8</Value>
+							<Value key="NumPureInputs" type="long">7</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>233.653846153846</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>356.303126353308</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{E7AE175B-35F8-4BC0-9ACE-D6A44CF93253}">
+					<Name>Neural Network (37) Prediction</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:57:50</DateCreated>
+					<DateModified>2024-03-09T15:57:50</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="7">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Wiener index" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X7</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">7 (Input) - 7 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjcsMSwwLC0xLDEuMTUyOTIzOTEwMTg3NjYyN2UtMDE2LDEsMTA0LC0xLDEu\nNDU0NDk4OTE0NDcyODYxNWUtMDE2LDAuOTk5OTk5OTk5OTk5OTk5MzMsMTA0LC0xLC0xLjYw\nMTI4MzIwODU5Mzk3NTllLTAxNywwLjk5OTk5OTk5OTk5OTk5OTY3LDEwNCwtMSwtNS43Mzc5\nMzE0OTc0NjE3NDcxZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk4OSwxMDQsLTEsNy40MTkyNzg4\nNjY0ODU0MjE5ZS0wMTcsMC45OTk5OTk5OTk5OTk5OTk2NywxMDQsLTEsLTIuOTg5MDYxOTg5\nMzc1NDIxOWUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5NDQsMTA0LC0xLC04LjcwMDMwNTQzMzM2\nMDYwMTZlLTAxNywxLDEwNCw3LDAsMCwwIgpjb3N0dyA9ICIxLDEsMCIKbWlkID0gIjAiCm95\nY29sID0gIlg4IgpzeGNvbCA9ICIiCnN4ZW5jID0gIiIKc3ljb2wgPSAiIgpzeWVuYyA9ICIi\nCnhjb2wgPSAiWDEsWDIsWDMsWDQsWDUsWDYsWDciCnhzY2FsID0gIjAsMSwwLDEsMCwxLDAs\nMSwwLDEsMCwxLDAsMSIKeWNvbCA9ICJYOCIKeXNjYWwgPSAiMCwxIgo3IDcgMQolJQpfX19f\nX19fCnNzc3Nzc3MKdQolJQojIDY0IGNvbm5lY3Rpb25zCiMgbGF5ZXIgMgoxMTExMTExMQox\nMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoj\nIGxheWVyIDMKMTExMTExMTEKJSUKIyBsYXllciAyCiMgbGF5ZXIgMiBwZSAxCi0wLjMwOTcz\nNTI1NzQ1OTc0NzUKMC4zODM0Nzg0OTUyMDE4OTI5OAowLjE4NTU5MjQxMzgxMjM3NDg1CjAu\nOTQzNjg1MjMxMDYzODc1NTgKLTAuMDQ5NjA5NjAzNjk2MjgxNjgKLTAuOTE5ODQ4Nzk5NDMy\nMzgyNTEKLTAuMTc3NzUyNjI0MjM3Nzg4MzQKLTAuMDk4MzEzNDEzMjQwMDgwODYKIyBsYXll\nciAyIHBlIDIKLTAuNDYzNzIzODM5MTUzNDEyMDkKLTAuMDIwNDY5MzMzNjA3ODg5Mzc0CjAu\nMTEyNDk1ODk5MTU0NDE4CjAuOTQ1ODIzNzEwMTE0MDY4NzQKMC4xODc5ODg4NjcxNTU1MzAx\nOAotMS4xMTIwODQ3ODI0ODA4MDM4CjAuMDE2MzE2MDQ3OTIzNDg2NzU5Ci0wLjEwMjYyNjA1\nODMzOTgxNTI3CiMgbGF5ZXIgMiBwZSAzCjAuMzQ2NjYzNzk3MzkyODMxMTUKLTAuNTY0NjE3\nMzI0MDY3NTY0MDQKLTAuNDc1NDUxMTU3MzMyMzQ3NDQKLTEuMTA1MjQwODgxNDAyMzIzMwow\nLjA5NzY1NTA5MzgxMzM2NjU2NwowLjk5NzU5Mzg5MzIzMTUxOTQ4Ci0wLjAwMzczODk4NDQx\nODUwMDQ5NzIKMC4xNjQ4NjUzOTI2ODQ2MzU4NQojIGxheWVyIDIgcGUgNAotMC40Njk5MjA2\nMTI5MDI5NjE4MwowLjA2NTM2NTU1NTIwNDY4NTg5OQowLjE3NzU5ODU3MjI1NzQ5MDg3CjAu\nOTQ3Njk0MjY0MzE2Mjg4NjcKMC4wNzM1Nzg3MzQyNjg0OTMxNzkKLTEuMDg5NjAxMzA0NTY1\nOTAxNAowLjA5MTA3NjkzMjQwMzA5Nzk1NwotMC4wNDMwOTM1NTg1NTkwNDE5ODMKIyBsYXll\nciAyIHBlIDUKLTAuMzQ2MTU0MzM1Mzc1NDA3MzUKMC4yOTQyMDA2ODI3Mjg3Njk2NQowLjE4\nMTc2Mzc1NzIzNzc2MzM5CjAuODMxMDk4OTU1NDkyMDUyOTMKLTAuMTM1MjUwMDA2Mzg0NjM1\nNTgKLTAuODQyMDU1MzI2NDk2MDkwNjEKMC4wNDI4NjMzNTI5OTAwMTg1NjgKMC4wMDA3ODQ0\nODMzMzI4MTI3Mjk1MQojIGxheWVyIDIgcGUgNgotMC4wMjM2MjAzNjc2MjQ1NzQ1NDgKLTAu\nMTg5MDA0NzM1MzA3ODk2MzUKLTAuMjQzNTMyOTYwMjQxNDM3MjgKLTAuNzE0MzQ2ODM3MTUw\nMDE3NzkKMC4wNjM5ODY5MDQ1MDAxNTg0MTIKMC40NzU3ODI5MDIxNDgyNDA1NAotMC4wNTYx\nMTEwNTEyODE5NTA1NDgKLTAuMDQ1ODA5OTY1MTc3Mzc5MTYxCiMgbGF5ZXIgMiBwZSA3CjAu\nNTMzMjc4MDYwMDIyMDk1NDMKLTAuMjUxNTA0Mzc3OTA2Mzc3MTQKLTAuMTkxNDgzNTMyNzM4\nNTU4NzUKLTEuMzQ3NDQ3MjMzODM0NDExNwotMC4wODgzNjg2MjA1MzU2Mzg2MTIKMS40Njg5\nNzc2MDg0NDQyOTM2CjAuMDUwODY5OTczMzI1OTk2MzQKMC4xMDM2ODkzMjA4OTAxNzY0MQoj\nIGxheWVyIDMKIyBsYXllciAzIHBlIDEKMC4zMjMwODkyNDA1MDMyNTU3NwoxLjc1NzMyNTM0\nMjk2NDczMDIKMS42MDc0NDI0ODAwNTg4Mzg1Ci0xLjUxNzYwOTIyOTU2NTY5MDcKMS43MzE4\nMTg5NTgwMzE2MDM1CjEuNjc4ODU5NzY5MTMyNzgwNwotMS44MDE4OTM3MzUzOTgxMzc5Ci0x\nLjcxODQ3NjcyMDU1Mzk3NDQK</Value>
+							<Value key="NumTotalColumns" type="long">8</Value>
+							<Value key="NumPureInputs" type="long">7</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>233.653846153846</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>356.303126353308</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+			<model>
+				<BasicInformation type="regression" GUID="{E9AD86C2-2DE7-4A0D-972C-77A222DA975E}">
+					<Name>Neural Network (38) Prediction</Name>
+					<Author>BIOVIA</Author>
+					<DateCreated>2024-03-09T15:59:50</DateCreated>
+					<DateModified>2024-03-09T15:59:50</DateModified>
+					<Note>Generated by Neural Network application.</Note>
+				</BasicInformation>
+				<Inputs number="7">
+					<Input name="H" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X1</KeyName>
+						</Key>
+					</Input>
+					<Input name="N" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X2</KeyName>
+						</Key>
+					</Input>
+					<Input name="Inter" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X3</KeyName>
+						</Key>
+					</Input>
+					<Input name="PM7" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X4</KeyName>
+						</Key>
+					</Input>
+					<Input name="HOF" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X5</KeyName>
+						</Key>
+					</Input>
+					<Input name="Zagreb index" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X6</KeyName>
+						</Key>
+					</Input>
+					<Input name="Heat of formation" type="numeric" role="Variable" permittedRoles="ParameterOrVariable">
+						<Key>
+							<KeyName>X7</KeyName>
+						</Key>
+					</Input>
+				</Inputs>
+				<Outputs number="1">
+					<Output name="Prediction for HOFexp" type="double">
+						<Key>
+							<KeyName>Node 1</KeyName>
+						</Key>
+					</Output>
+					<OutputGroups number="1">
+						<OutputGroup name="Neural Network Prediction" category="Empirical">
+							<OutputKey>Node 1</OutputKey>
+						</OutputGroup>
+					</OutputGroups>
+				</Outputs>
+				<Relationship>
+					<SimpleEngine engineProgID="SBStatisticsModelEngines.ModelEngineNeuralNetwork.1" engineName="Neural Network">
+						<EngineDetails>
+							<Value key="Hidden layers" type="string">1</Value>
+							<Value key="Topology" type="string">7 (Input) - 6 - 1 (Output)</Value>
+						</EngineDetails>
+						<SimpleEngineParameters>
+							<Value key="LayerNumber" type="long">2</Value>
+							<Value key="NodesInLayer" type="long">1</Value>
+							<Value key="OutputLayer" type="bool">-1</Value>
+							<Value key="ResidualsModel" type="bool">0</Value>
+							<Value key="SerializedNetwork" type="string">repl=-1;Y29sbWFwID0gIjcsMSwwLC0xLDUuMzkwOTg2ODAyMjY2Mzg1N2UtMDE3LDEsMTA0LC0xLDEu\nMTUyOTIzOTEwMTg3NjYyN2UtMDE2LDAuOTk5OTk5OTk5OTk5OTk5MzMsMTA0LC0xLDIuMDI4\nMjkyMDY0MjE5MDM2MmUtMDE3LDAuOTk5OTk5OTk5OTk5OTk5ODksMTA0LC0xLC00LjgwMzg0\nOTYyNTc4MTkyNzVlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSw5LjcxNDQ1MTQ2\nNTQ3MDExOTdlLTAxNywwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSw2LjkzODg5MzkwMzkw\nNzIyODRlLTAxOCwwLjk5OTk5OTk5OTk5OTk5OTg5LDEwNCwtMSwtMS4wNDYxNzE2OTYyODEz\nOTc2ZS0wMTYsMC45OTk5OTk5OTk5OTk5OTk4OSwxMDQsNywwLDAsMCIKY29zdHcgPSAiMSwx\nLDAiCm1pZCA9ICIwIgpveWNvbCA9ICJYOCIKc3hjb2wgPSAiIgpzeGVuYyA9ICIiCnN5Y29s\nID0gIiIKc3llbmMgPSAiIgp4Y29sID0gIlgxLFgyLFgzLFg0LFg1LFg2LFg3Igp4c2NhbCA9\nICIwLDEsMCwxLDAsMSwwLDEsMCwxLDAsMSwwLDEiCnljb2wgPSAiWDgiCnlzY2FsID0gIjAs\nMSIKNyA2IDEKJSUKX19fX19fXwpzc3Nzc3MKdQolJQojIDU1IGNvbm5lY3Rpb25zCiMgbGF5\nZXIgMgoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTExMTExMQoxMTEx\nMTExMQojIGxheWVyIDMKMTExMTExMQolJQojIGxheWVyIDIKIyBsYXllciAyIHBlIDEKLTAu\nNTU2MDg3MDI0NzY5NjM0NDUKMC4zMTc0OTEwNjg2NjMzMjU3NwowLjQyMDA4NTQyOTY1MzIz\nNDI1CjEuMDA3MTA3NTI4NzA0MzAyOAowLjI2MDU1Nzc2MDIwNTY1OTQxCi0xLjMzMjkzNDIx\nNjg4MjY0NzUKMC41NzA2NDg2OTU4MTgxNjcwMgotMC4yMzAwMjk3Mzg4NzE3NzI3OAojIGxh\neWVyIDIgcGUgMgotMC4yMTg0NDIxOTY4MzA0MDU4CjAuNDA2MjUyMjc4NzQ4MzYzMDYKMC4z\nMzczODcwMjMwMjE1MjI4NQoxLjY0NzkyNjUyMzY2NTY4NzUKLTAuMzMwMjI3MTM2MDgzMzg0\nCi0xLjQyNDgwMjU3OTY5MjM1NjkKLTAuNDA1MTIzODI5NTg2MTQ3OQotMC4xMzI4NzgxMjQx\nNTE4Mjk0CiMgbGF5ZXIgMiBwZSAzCi0wLjc2NTA0OTQ5NjU4MDMzNDE3CjAuNzg2MzM4NTk2\nOTI0NjcyMDEKMC41NTQ0NDk4NTUzMDQ5ODI3CjEuNDk2Mjk0ODg5NjAwMTA1MQotMC43Mjcw\nOTI3OTUxNzM1OTgwNAotMC43NTk4MDk0MDUzNzQ0Njk2MgowLjExNjUyNzE4Njc3OTA5Nzc2\nCi0wLjA4NzcxNjA1ODk5OTgyNzQ4NAojIGxheWVyIDIgcGUgNAowLjIxNTc5NjkxMzQwNjIz\nOTA1Ci0wLjE1NzM3NTQzNjY2NDAyNDk4Ci0wLjE5Nzg3MzQ3MjI3NTA0NTMxCi0xLjEyMDk5\nNDkwMDg3MTg5MzQKLTAuMjk2NzcwMjg1Nzg0NDE3ODkKMS40NDA2OTY1OTMxMzcxNzUxCi0w\nLjA4Mjc2NzI1NjYwOTIyMjQ2MgowLjEyNDcxNDEwOTk4NjY0MDQ1CiMgbGF5ZXIgMiBwZSA1\nCjAuMTY3MTk1OTIxNzM5Mzc5OAotMC4wNzYzMzk1NjE0NDY0NDI2MTkKLTAuMDg5ODcyNDg0\nMDgzNDI1OTM1Ci0wLjk4NDQzMzI1MTM0MzI4MzUyCi0wLjI1NDU0MzU2MzcwNzk4NzY0CjEu\nMjMyODkyNTMyOTk2NzAzOAowLjAwNTU2MTA0NzQ5NTMzODcyNDQKMC4wNzkxOTc5NjczMTIz\nODU2MjUKIyBsYXllciAyIHBlIDYKMC4zOTgwMzM4NTIyOTY3NjkyNAotMC4xODAxMjE2Njc4\nMDY0NTcwMwotMC4xNDkyNzA2MTg3MTY0OTE4MwotMC44NzQwNDIwMzcyNDEzMDcwMgotMC4y\nMzY4OTg5MDQwODE2Nzc5NAoxLjAyOTY5MDY5MzU4NzQ5ODEKMC4yOTgwNTg3ODE2ODc0NTUz\nNwowLjE2MTA1MzkwMTc3NDM2MjQxCiMgbGF5ZXIgMwojIGxheWVyIDMgcGUgMQowLjQwMDE0\nNzI1MTkwMjY0NzQ5CjEuNzc1MjQ3MzMxNDE4NDczOAoyLjU2NzI5NTE5MzkxODM2NDEKMi4w\nNjQzNDE1MDA5MTcyMTU5Ci0xLjg3MjU1NzM0OTk3MTgxMjkKLTEuNzM0NTY2NDg3Mjk1NTM2\nNgotMS4yMDc4MzgzNDkxNDAzOTYxCg==</Value>
+							<Value key="NumTotalColumns" type="long">8</Value>
+							<Value key="NumPureInputs" type="long">7</Value>
+							<Value key="NumReplications" type="long">0</Value>
+							<Value key="NumPureOutputs" type="long">1</Value>
+							<Value key="InputDerivation" type="long">0</Value>
+							<ArrayValue key="ColumnMeans" type="double">
+								<Item>6.45192307692308</Item>
+								<Item>5.99038461538462</Item>
+								<Item>7.01153720255769</Item>
+								<Item>28.69411875</Item>
+								<Item>155.005769230769</Item>
+								<Item>50.5</Item>
+								<Item>93.8045410576923</Item>
+								<Item>9.98882197650962</Item>
+							</ArrayValue>
+							<ArrayValue key="ColumnScaleValues" type="double">
+								<Item>2.94572195213128</Item>
+								<Item>4.36111500908649</Item>
+								<Item>58.7384227738371</Item>
+								<Item>291.068351837099</Item>
+								<Item>487.568213764176</Item>
+								<Item>28.9837584248003</Item>
+								<Item>126.56973986162</Item>
+								<Item>74.4690910964162</Item>
+							</ArrayValue>
+							<Value key="AllowMissingValues" type="bool">0</Value>
+						</SimpleEngineParameters>
+					</SimpleEngine>
+				</Relationship>
+			</model>
+		</models>
+		<predictions>
+			<prediction id="{C3A3F38C-F6C2-4B6C-B254-08957B6FBF35}">
+				<inputs>
+					<Value key="Structure">{AE69C516-4F59-468B-9314-41CE2AF64F65}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Rotlbonds">{B79EBCD3-3691-4472-ADD5-1997FBC927AB}</Value>
+					<Value key="Hbond donor">{54CC38ED-3418-40B3-96EB-230E31820F26}</Value>
+					<Value key="Hbond acceptor">{7D4AF219-2E3C-4552-8AD3-722861E2D6CF}</Value>
+					<Value key="Chiral centers">{4F435B7E-69A4-4602-A4A7-C3BC397BCD9C}</Value>
+					<Value key="AlogP">{D8AF4506-4165-4F2D-ACB6-FA060129ECCB}</Value>
+					<Value key="AlogP98">{D4A41654-3A2E-463E-BD22-75E84FF9F85A}</Value>
+					<Value key="MolRef">{D7CD6794-ABDD-4E94-B9BA-16F50F681A7E}</Value>
+					<Value key="PHI">{FF9920C3-FF8E-473A-A6F4-5523319284C1}</Value>
+					<Value key="JX">{5ABFB4AF-889C-4700-A396-AD4DC7E032EC}</Value>
+					<Value key="JY">{7E6C811B-E181-4567-B04D-D90F1F11F7B4}</Value>
+					<Value key="Wiener">{D1743450-68AE-418B-A00E-5790804A1A02}</Value>
+					<Value key="Zagreb">{2DA45854-BFA4-4232-B47B-62E621DC476E}</Value>
+					<ArrayValue key="KAPPA">
+						<Item>{95C077B0-4F44-4DCB-804B-BFE772B0F4F6}</Item>
+						<Item>{D5863748-F598-461D-B7C5-66EEF5548941}</Item>
+						<Item>{2AD6F20A-4ECB-406A-A0F1-2F215FF86DF0}</Item>
+					</ArrayValue>
+					<ArrayValue key="KAPPA-AM">
+						<Item>{3647D616-D486-4A1A-BA1B-05E2FC67989A}</Item>
+						<Item>{A771E445-5068-4035-AB94-EAEA8ECBDCB7}</Item>
+						<Item>{E2CAC250-C0A0-48DE-AB50-BC36FB365E65}</Item>
+					</ArrayValue>
+					<ArrayValue key="SC03">
+						<Item>{83F6DAF0-DBB6-46AA-82D9-FB3CBE3BE49E}</Item>
+						<Item>{0708E21C-F8C2-4964-A48F-3D800B220812}</Item>
+						<Item>{3C3E6BD6-50F7-44F4-B0AF-11BFF3D78CF9}</Item>
+						<Item>{545E90B8-6B77-45CF-BE7B-186C5FE5E839}</Item>
+						<Item>{2726F98C-EA46-4A0E-AADC-AB6E46B49598}</Item>
+						<Item>{A1EF92C6-19F8-41E2-94FD-F855B2CF7143}</Item>
+					</ArrayValue>
+					<ArrayValue key="CHI03">
+						<Item>{47BF6CFD-115A-4452-B698-110C3DDB5FBC}</Item>
+						<Item>{7B76B03E-8903-4570-A32D-CB5785CC96E6}</Item>
+						<Item>{42243FD5-51DB-451C-AF1E-61FF9AC7E3D8}</Item>
+						<Item>{7B4ECC7B-70A2-40D1-B253-34A0720EA6EB}</Item>
+						<Item>{026A7F78-878C-4254-95D1-3A0683F6654E}</Item>
+						<Item>{56407C45-ECFA-42EB-A9C4-355B179B58F4}</Item>
+					</ArrayValue>
+					<ArrayValue key="CHIV03">
+						<Item>{EA625A4D-14C6-4588-9294-AA5C28A08B0F}</Item>
+						<Item>{2074938A-1AA2-4627-AC5F-E287931148B9}</Item>
+						<Item>{D565F735-1933-45BA-B044-847A45286A5A}</Item>
+						<Item>{8DB59DAE-6CA1-4D73-AD6F-9F80BE183EE8}</Item>
+						<Item>{21E10D42-5061-4340-AFCA-B7306B3295CF}</Item>
+						<Item>{6C2E773D-3017-4255-94E4-F9C3CD521539}</Item>
+					</ArrayValue>
+					<Value key="IC">{94B4604C-972B-4041-8EE0-D4B8FBCE6D5A}</Value>
+					<Value key="BIC">{083FF607-B56A-4DC0-AEB1-04AAE262F279}</Value>
+					<Value key="CIC">{56EED579-E4C8-4210-A00C-001FA28BEF5A}</Value>
+					<Value key="SIC">{7B9AEB99-CEB2-4391-BF62-2C83DFCCABBC}</Value>
+					<Value key="E-ADJ-mag">{6A162807-CAF5-4F49-8B54-C30EEC3486CC}</Value>
+					<Value key="E-DIST-mag">{B0CF8165-FA42-4B05-9A94-ABD6BC87100B}</Value>
+					<Value key="V-ADJ-equ">{9A55690B-42AD-4EE5-B524-87E4E0581668}</Value>
+					<Value key="V-ADJ-mag">{B2D841F2-89AD-4674-A78E-155AEA303E26}</Value>
+					<Value key="V-DIST-equ">{DA2AD696-73E0-474B-9CC2-0FE8A1E7F75F}</Value>
+					<Value key="V-DIST-mag">{27AA53E4-F49E-4620-BD87-7B811F87416A}</Value>
+					<Value key="IAC-Total">{DECE9845-229A-42B1-868A-218F559D1CCF}</Value>
+					<ArrayValue key="ESUMS">
+						<Item>{89DAD419-887D-46EF-B3D4-58231E918BAA}</Item>
+						<Item>{BDE8A0D0-05B4-4BFE-8F69-69C7EAEE8C28}</Item>
+						<Item>{D53D05FA-CFA4-437D-8EC0-C8F439FFAA13}</Item>
+						<Item>{980213C2-27D2-4293-AD05-AAB2D8C3FFBA}</Item>
+						<Item>{3FB012BB-BCBD-4B04-858F-F455C3D5722B}</Item>
+						<Item>{E40B4826-7078-4AE5-B9A5-FF82A579CCA5}</Item>
+						<Item>{D3E13F0C-4EB9-4F92-BB22-B386B911CF00}</Item>
+						<Item>{31D92B12-66C7-4678-BCAB-C6550D1F23AD}</Item>
+						<Item>{74F42378-0B9B-486C-A5E3-97539082CB04}</Item>
+						<Item>{FF0C0DD3-1CF9-43EA-8805-6FE3390CB2DC}</Item>
+						<Item>{0F1F05FD-D032-4869-9896-72A0C9A36B9E}</Item>
+						<Item>{614E65D8-ECFB-49E1-AFCF-656FF763451D}</Item>
+						<Item>{8F5EB2AE-0BBE-4F2F-8AA4-98BE8F16853D}</Item>
+						<Item>{6E614CE3-608F-4DF1-81B5-AF132F42C055}</Item>
+						<Item>{597F591F-5787-4D07-B3D4-E83AFCE17FEB}</Item>
+						<Item>{1D382E53-335F-4A25-AF58-3972EAC57A39}</Item>
+						<Item>{B231FBDB-E0A2-447E-9236-D894A4875E49}</Item>
+						<Item>{7FCF05DC-45DF-4605-B56D-2A306387A6D4}</Item>
+						<Item>{11697147-10FC-4301-AC62-D5649B10576D}</Item>
+						<Item>{84D59947-57A2-49AF-B7E6-D8936503900C}</Item>
+						<Item>{07CA1E10-9AC5-4D56-8668-88E44745A892}</Item>
+						<Item>{9A0EA147-01C2-4951-ABDF-360DE3090684}</Item>
+						<Item>{1D9E332B-DFE9-4A0D-9AD0-8CE89069D3C6}</Item>
+						<Item>{4EED63D5-5A3D-459D-9078-DCB0C213FFF5}</Item>
+						<Item>{8D3C635F-34F9-4EBF-B297-50E1069D4F36}</Item>
+						<Item>{68E3D92B-6DAB-48B8-A3F0-4A7FBED15E89}</Item>
+						<Item>{E35424FB-FFDD-4E75-900E-D9977996D0FD}</Item>
+						<Item>{38EA020B-3DE7-4675-900D-3F217E8B17E2}</Item>
+						<Item>{F5D7E278-8B45-413F-82CB-B0643B2EE5D9}</Item>
+						<Item>{DA5A6DC8-4951-4BEF-856B-2AD20BD712B2}</Item>
+						<Item>{20A0359E-BBB8-43D7-9E5C-CC40FAA00102}</Item>
+						<Item>{C46247CC-5ACE-45DC-8CFB-0841045D5C3C}</Item>
+						<Item>{CD29827D-B37D-4EB1-9027-6408F7BA9BAD}</Item>
+						<Item>{025ED855-0EBC-487E-8651-FAE3385AEF35}</Item>
+						<Item>{B618231F-5E72-4B6C-952E-26E24CC1355B}</Item>
+						<Item>{205E4049-937B-4B3F-B6D5-A19783A58DC1}</Item>
+						<Item>{9B8E71AC-02E4-4F3C-A901-4BC8F849B0DF}</Item>
+						<Item>{7AE8873D-45A9-4A1A-B5E0-9A5DC3EBF17E}</Item>
+						<Item>{0950C5B5-C974-4F85-A4D1-5F84CBCFCD2C}</Item>
+						<Item>{EF67F0CF-F573-47D9-BF0A-54C8DF66B7B0}</Item>
+						<Item>{547F10C3-09AF-4D5E-BABC-612FA6854B07}</Item>
+						<Item>{6FAB43C9-2227-425B-AF77-639AA0230A69}</Item>
+						<Item>{477484F8-3B83-4F39-A922-2713C6029888}</Item>
+						<Item>{C7105ADB-8136-4C06-BCD6-B5BD20395480}</Item>
+						<Item>{105AA0D6-28A3-4DFB-93FC-CE1575F5F714}</Item>
+						<Item>{388B9054-9C06-4567-A694-43D39D0C0F05}</Item>
+						<Item>{26FB611F-1305-4682-B599-7B6BABB51014}</Item>
+						<Item>{9871A5FE-0F0D-4165-817C-B15089F1FCFE}</Item>
+						<Item>{210B014E-9FC3-465B-83CC-070FF8861B92}</Item>
+						<Item>{AC9806C9-B42E-4EDD-8264-B03437C69F7F}</Item>
+						<Item>{6198BCE0-E30C-4A0F-9EFC-AF83BE16E599}</Item>
+						<Item>{81F0A786-595F-4995-ABF3-6DE4CD306D39}</Item>
+						<Item>{4C0E1839-26DA-4245-965A-280504822C13}</Item>
+						<Item>{2FE2E05E-0BD4-40C7-824E-F0B0CFB1A29C}</Item>
+						<Item>{3FBA3C3C-B358-42F5-A63E-68851077EF38}</Item>
+						<Item>{95DD824D-396C-4507-B095-620619263F26}</Item>
+						<Item>{3049119B-E4BE-41CE-AAC9-3A85AD74DBDB}</Item>
+						<Item>{A7FD9117-34B7-425D-8E24-684C73FA8785}</Item>
+						<Item>{875415C0-33F4-4BE2-BECF-2668B9702C3D}</Item>
+						<Item>{91E5440B-60E5-4740-AE7F-76363FEB4FEE}</Item>
+						<Item>{0672D548-C961-4D15-9A66-44C552F9886B}</Item>
+						<Item>{8DF6843B-93FA-4191-B405-B36787AC90F5}</Item>
+						<Item>{7C3B9433-4A26-4EE7-923A-7B8A83D8FB80}</Item>
+						<Item>{50EDB295-8DB4-45B1-B714-49B9C50CBF34}</Item>
+						<Item>{ECB20F00-1414-4A85-ADFA-F5D44801E9E0}</Item>
+						<Item>{098FE8AA-2172-431E-83A9-C3040D194D3C}</Item>
+						<Item>{5A05EBE9-EAE0-4E34-822A-1E6774AF99EB}</Item>
+						<Item>{7E113427-D280-4200-91D3-68E944248307}</Item>
+						<Item>{354CBF46-80BE-4ECB-82F2-AD359A3D9E01}</Item>
+						<Item>{3E38ACEA-5A78-40AF-A53C-3B07455003AE}</Item>
+						<Item>{7834BCA6-AEA3-4B29-821D-5BD6806AC3A5}</Item>
+						<Item>{FC6212F7-C3C4-45D3-BC49-AF76BE7B35A5}</Item>
+						<Item>{4103FEAB-38B5-4B4D-AC1E-B26323B4701D}</Item>
+						<Item>{C50DA67E-CD64-47B7-BDB5-0B3E8C5DDEAC}</Item>
+						<Item>{F6674F98-F93E-45F6-9F0A-C3FFB25F06EE}</Item>
+						<Item>{03292F9F-9DB4-4B74-8646-FF6CABA1962C}</Item>
+						<Item>{8EA92DD7-ED57-4492-9158-FFF78533E9C2}</Item>
+						<Item>{770FBAF7-1264-44F8-B0F9-3718105B3121}</Item>
+						<Item>{BB3F5037-1E4F-4AB8-8AA1-44B059727258}</Item>
+					</ArrayValue>
+				</outputs>
+				<modelId>{801CB9F3-5E60-4F92-987B-2DF607B812B4}</modelId>
+			</prediction>
+			<prediction id="{D0836B05-EAE8-42FE-915F-1C99AED8145E}">
+				<inputs>
+					<Value key="Structure">{AE69C516-4F59-468B-9314-41CE2AF64F65}</Value>
+				</inputs>
+				<outputs>
+					<Value key="HEAT OF FORMATION">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+					<Value key="HOMO">{ED95EF3C-E01A-4029-9ED9-2BE4919754DE}</Value>
+					<Value key="LUMO">{9D7E0E40-27D3-43BF-A94F-04CC1E75DD17}</Value>
+				</outputs>
+				<modelId>{9B673696-6E67-4148-8B9B-CE91B8B860EA}</modelId>
+			</prediction>
+			<prediction id="{4150E947-0D89-4A59-9404-E44C76668208}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{DFFD7CF4-8D1A-4217-A26F-32F6709885AD}</Value>
+				</outputs>
+				<modelId>{C375D95D-A0C4-4F21-936C-3CF84EA24D0B}</modelId>
+			</prediction>
+			<prediction id="{D0C11443-A735-454C-BF64-4214DFC87C5E}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{A30E5783-5C04-47F3-8177-44339C1B1609}</Value>
+				</outputs>
+				<modelId>{C528F5D9-7798-4E52-B4E5-0B77C1574063}</modelId>
+			</prediction>
+			<prediction id="{A9EC610C-B7B8-43A6-B0B4-73F33A2044D0}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{9016D3B5-580B-403F-A9B7-B0F5408CC3EE}</Value>
+				</outputs>
+				<modelId>{8EE76EE0-B16F-4028-9674-F245C6AEB804}</modelId>
+			</prediction>
+			<prediction id="{01CD77DB-5DEA-4C37-A626-8DCB8F67DD9A}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{32EC2E15-0175-48D0-B144-D41D957F78D4}</Value>
+				</outputs>
+				<modelId>{E3270E71-68DB-413E-A543-F88AF0AAC79D}</modelId>
+			</prediction>
+			<prediction id="{524E6E57-DEF9-4902-BB30-FD7702B0A9F6}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{57C57F2C-5F26-4333-82AA-CB41AC8ABB41}</Value>
+				</outputs>
+				<modelId>{6DC865C8-980F-4FD9-890E-457AB5BC957C}</modelId>
+			</prediction>
+			<prediction id="{EFA798A9-5F0F-4076-AC0F-7F4A74F44D4E}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{7D4AF219-2E3C-4552-8AD3-722861E2D6CF}</Value>
+					<Value key="X7">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{D8421056-A9FD-41DD-BC41-911BCE56288D}</Value>
+				</outputs>
+				<modelId>{18F06AE5-D0BB-4393-807F-9B0187D2CED9}</modelId>
+			</prediction>
+			<prediction id="{E584FC44-F0C5-4E55-A563-3757DC0294DC}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{7D4AF219-2E3C-4552-8AD3-722861E2D6CF}</Value>
+					<Value key="X7">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{7F65049A-5DDB-4792-9655-A7BD69D218D2}</Value>
+				</outputs>
+				<modelId>{0466B2A6-18A2-462F-B48E-6B95615E8FCD}</modelId>
+			</prediction>
+			<prediction id="{417E96BB-5F65-4038-91E0-110CC3164094}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{D1743450-68AE-418B-A00E-5790804A1A02}</Value>
+					<Value key="X7">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{C009AF97-90ED-4376-912C-1571A5F7C2A4}</Value>
+				</outputs>
+				<modelId>{F4468463-B415-4E5B-99E0-1A6AF738D521}</modelId>
+			</prediction>
+			<prediction id="{11C2151F-6D39-463F-8AEB-66D6255EFED9}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{D1743450-68AE-418B-A00E-5790804A1A02}</Value>
+					<Value key="X7">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{D3D49726-7DEB-4671-9A70-4F6FAF304215}</Value>
+				</outputs>
+				<modelId>{E7AE175B-35F8-4BC0-9ACE-D6A44CF93253}</modelId>
+			</prediction>
+			<prediction id="{3F4A7B65-E658-41AF-AF5D-568755B08022}">
+				<inputs>
+					<Value key="X1">{74120EFF-8C8C-4868-8402-2DBC277F9A90}</Value>
+					<Value key="X2">{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}</Value>
+					<Value key="X3">{06077E37-BAE0-4C64-856B-ACAFCF307960}</Value>
+					<Value key="X4">{0E1AAB47-B16A-4951-A49B-DBA01295A74D}</Value>
+					<Value key="X5">{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}</Value>
+					<Value key="X6">{2DA45854-BFA4-4232-B47B-62E621DC476E}</Value>
+					<Value key="X7">{A03D0E5D-C566-4534-B3A3-B14C1472C930}</Value>
+				</inputs>
+				<outputs>
+					<Value key="Node 1">{411537D2-5419-4F1B-B2CD-1822973AF066}</Value>
+				</outputs>
+				<modelId>{E9AD86C2-2DE7-4A0D-972C-77A222DA975E}</modelId>
+			</prediction>
+		</predictions>
+		<fields>
+			<field id="{B383BC68-F4E9-48B0-8E17-A821E00D7A59}" description="Salt"/>
+			<field id="{BB3CC924-B104-47CB-9D58-267A70C4C350}" description="HOFexp"/>
+			<field id="{74120EFF-8C8C-4868-8402-2DBC277F9A90}" description="H"/>
+			<field id="{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}" description="N"/>
+			<field id="{06077E37-BAE0-4C64-856B-ACAFCF307960}" description="HOFCASTEP"/>
+			<field id="{0E1AAB47-B16A-4951-A49B-DBA01295A74D}" description="HOFPM7(cryst)"/>
+			<field id="{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}" description="HOFadditive"/>
+			<field id="{AE69C516-4F59-468B-9314-41CE2AF64F65}" type="structure" description="Structures"/>
+			<field id="{7D4AF219-2E3C-4552-8AD3-722861E2D6CF}" type="count" sourceId="{C3A3F38C-F6C2-4B6C-B254-08957B6FBF35}"/>
+			<field id="{D1743450-68AE-418B-A00E-5790804A1A02}" type="long" sourceId="{C3A3F38C-F6C2-4B6C-B254-08957B6FBF35}"/>
+			<field id="{2DA45854-BFA4-4232-B47B-62E621DC476E}" type="long" sourceId="{C3A3F38C-F6C2-4B6C-B254-08957B6FBF35}"/>
+			<field id="{A03D0E5D-C566-4534-B3A3-B14C1472C930}" type="energy" sourceId="{D0836B05-EAE8-42FE-915F-1C99AED8145E}"/>
+			<field id="{DFFD7CF4-8D1A-4217-A26F-32F6709885AD}" type="double" description="ANN1 (kcal/mol)" sourceId="{4150E947-0D89-4A59-9404-E44C76668208}"/>
+			<field id="{A30E5783-5C04-47F3-8177-44339C1B1609}" type="double" description="ANN2 (kcal/mol)" sourceId="{D0C11443-A735-454C-BF64-4214DFC87C5E}"/>
+			<field id="{9016D3B5-580B-403F-A9B7-B0F5408CC3EE}" type="double" description="ANN3 (kcal/mol)" sourceId="{A9EC610C-B7B8-43A6-B0B4-73F33A2044D0}"/>
+			<field id="{32EC2E15-0175-48D0-B144-D41D957F78D4}" type="double" description="ANN4 (kcal/mol)" sourceId="{01CD77DB-5DEA-4C37-A626-8DCB8F67DD9A}"/>
+			<field id="{57C57F2C-5F26-4333-82AA-CB41AC8ABB41}" type="double" description="ANN5 (kcal/mol)" sourceId="{524E6E57-DEF9-4902-BB30-FD7702B0A9F6}"/>
+			<field id="{D8421056-A9FD-41DD-BC41-911BCE56288D}" type="double" description="ANN6 (kcal/mol)" sourceId="{EFA798A9-5F0F-4076-AC0F-7F4A74F44D4E}"/>
+			<field id="{7F65049A-5DDB-4792-9655-A7BD69D218D2}" type="double" description="ANN7 (kcal/mol)" sourceId="{E584FC44-F0C5-4E55-A563-3757DC0294DC}"/>
+			<field id="{C009AF97-90ED-4376-912C-1571A5F7C2A4}" type="double" description="ANN8 (kcal/mol)" sourceId="{417E96BB-5F65-4038-91E0-110CC3164094}"/>
+			<field id="{D3D49726-7DEB-4671-9A70-4F6FAF304215}" type="double" description="ANN9 (kcal/mol)" sourceId="{11C2151F-6D39-463F-8AEB-66D6255EFED9}"/>
+			<field id="{411537D2-5419-4F1B-B2CD-1822973AF066}" type="double" description="ANN10 (kcal/mol)" sourceId="{3F4A7B65-E658-41AF-AF5D-568755B08022}"/>
+		</fields>
+		<systems>
+			<system id="{242F732B-7077-49D1-9B26-AF54A8291636}">
+				<datum status="1">
+					<value type="BSTR">TKX-50</value>
+				</datum>
+				<datum status="1">
+					<value type="R8">41.89770554</value>
+				</datum>
+				<datum status="1">
+					<value type="I4">8</value>
+				</datum>
+				<datum status="1">
+					<value type="I4">10</value>
+				</datum>
+				<datum status="1">
+					<value type="R8">35.57886121</value>
+				</datum>
+				<datum status="1">
+					<value type="R8">85.04724</value>
+				</datum>
+				<datum status="1">
+					<value type="R8">466.4</value>
+				</datum>
+				<datum status="1">
+					<containedObject url=".\\TKX-50.xsd" name="TKX-50"/>
+				</datum>
+				<datum status="3">
+					<value type="I4">8</value>
+				</datum>
+				<datum status="3">
+					<value type="I4">184</value>
+				</datum>
+				<datum status="3">
+					<value type="I4">62</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">289.119995</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">33.5740241871697</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">30.1575181448168</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">27.9669307273344</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">31.0150840082473</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">37.8140402768847</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">29.4371839282599</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">25.5877288543749</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">24.6660231988449</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">30.633175406996</value>
+				</datum>
+				<datum status="3">
+					<value type="R8">23.7183447995042</value>
+				</datum>
+			</system>
+			<system id="{3C5CC869-AE34-4A3E-A465-2091D1A935CA}">
+				<datum/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+				<datum status="1"/>
+			</system>
+		</systems>
+	</data>
+	<sheets activeSheet="0">
+		<cellStyles/>
+		<sheet title="Sheet 1" id="{0CC022F2-D349-420B-B16F-7997C5BE5F7B}">
+			<rows defaultHeight="30" headerWidth="20">
+				<row sysId="{242F732B-7077-49D1-9B26-AF54A8291636}"/>
+				<row sysId="{3C5CC869-AE34-4A3E-A465-2091D1A935CA}"/>
+			</rows>
+			<columns defaultWidth="85" headerHeight="45">
+				<column fieldId="{B383BC68-F4E9-48B0-8E17-A821E00D7A59}" width="168"/>
+				<column fieldId="{BB3CC924-B104-47CB-9D58-267A70C4C350}"/>
+				<column fieldId="{74120EFF-8C8C-4868-8402-2DBC277F9A90}"/>
+				<column fieldId="{84236BFD-9E0A-495C-B0DC-48AB8945C1D3}"/>
+				<column fieldId="{06077E37-BAE0-4C64-856B-ACAFCF307960}"/>
+				<column fieldId="{0E1AAB47-B16A-4951-A49B-DBA01295A74D}"/>
+				<column fieldId="{ECF1C292-FEE7-4EED-AB93-6D3610F1E785}"/>
+				<column fieldId="{AE69C516-4F59-468B-9314-41CE2AF64F65}" width="123"/>
+				<column fieldId="{7D4AF219-2E3C-4552-8AD3-722861E2D6CF}"/>
+				<column fieldId="{D1743450-68AE-418B-A00E-5790804A1A02}"/>
+				<column fieldId="{2DA45854-BFA4-4232-B47B-62E621DC476E}"/>
+				<column fieldId="{A03D0E5D-C566-4534-B3A3-B14C1472C930}"/>
+				<column fieldId="{DFFD7CF4-8D1A-4217-A26F-32F6709885AD}"/>
+				<column fieldId="{A30E5783-5C04-47F3-8177-44339C1B1609}"/>
+				<column fieldId="{9016D3B5-580B-403F-A9B7-B0F5408CC3EE}"/>
+				<column fieldId="{32EC2E15-0175-48D0-B144-D41D957F78D4}"/>
+				<column fieldId="{57C57F2C-5F26-4333-82AA-CB41AC8ABB41}"/>
+				<column fieldId="{D8421056-A9FD-41DD-BC41-911BCE56288D}"/>
+				<column fieldId="{7F65049A-5DDB-4792-9655-A7BD69D218D2}"/>
+				<column fieldId="{C009AF97-90ED-4376-912C-1571A5F7C2A4}"/>
+				<column fieldId="{D3D49726-7DEB-4671-9A70-4F6FAF304215}"/>
+				<column fieldId="{411537D2-5419-4F1B-B2CD-1822973AF066}"/>
+			</columns>
+			<cells>
+				<styles>
+					<styleRef count="44">0</styleRef>
+				</styles>
+				<colors>
+					<block>,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,</block>
+				</colors>
+			</cells>
+		</sheet>
+	</sheets>
+</studyTableDocument>
